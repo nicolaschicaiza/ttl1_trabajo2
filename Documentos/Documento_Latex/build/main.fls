@@ -1,7 +1,7 @@
-PWD d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex
+PWD c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex
 INPUT C:\Users\Nicolas Chicaiza\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\main.tex
-OUTPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.log
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\main.tex
+OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
@@ -13,10 +13,11 @@ INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\babel.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\babel.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\babel.sty
@@ -49,25 +50,33 @@ INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\utf8x.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\utf8x.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\utf8x.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\utf8x.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucs.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucs.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucs.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucs.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucs.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucs.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucs.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucs.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucs.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucs.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucs.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-global.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-global.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-global.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-global.def
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\times.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1ptm.fd
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1ptm.fd
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1ptm.fd
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1ptm.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\latex-tools\tabularx.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\latex-tools\tabularx.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\latex-tools\tabularx.sty
@@ -572,6 +581,17 @@ INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyh
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\parskip\parskip.sty
@@ -931,6 +951,17 @@ INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzl
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarycalc.code.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfit.code.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfit.code.tex
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\titlesec\titlesec.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
@@ -942,9 +973,9 @@ INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
@@ -952,11 +983,7 @@ INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-en.ini
-OUTPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucsencs.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucsencs.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucsencs.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\ucsencs.def
+OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -972,6 +999,22 @@ INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty
@@ -1010,40 +1053,21 @@ INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\generic\gettitlestrin
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-OUTPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-OUTPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.pdf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.pdf
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
@@ -1052,19 +1076,36 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-0.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-0.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-0.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-0.def
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT Escudo.jpg
@@ -1072,21 +1113,30 @@ INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmss10.tfm
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1phv.fd
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1phv.fd
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1phv.fd
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1phv.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\Nicolas Chicaiza\AppData\Local\MiKTeX\pdftex\config\pdftex.map
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT Escudo.jpg
 INPUT .\Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT Escudo.jpg
-INPUT .\Escudo.jpg
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT Escudo.jpg
@@ -1098,7 +1148,7 @@ INPUT .\img\figure2_A.png
 INPUT .\img\figure2_A.png
 INPUT .\img\figure2_A.png
 INPUT .\img\figure2_A.png
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT .\img\figure2_B.png
 INPUT .\img\figure2_B.png
 INPUT img\figure2_B.png
@@ -1113,10 +1163,6 @@ INPUT .\img\figure3.png
 INPUT .\img\figure3.png
 INPUT .\img\figure3.png
 INPUT .\img\figure3.png
-INPUT .\Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT Escudo.jpg
-INPUT .\Escudo.jpg
 INPUT .\img\figure4_A.png
 INPUT .\img\figure4_A.png
 INPUT img\figure4_A.png
@@ -1149,6 +1195,8 @@ INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT Escudo.jpg
 INPUT .\Escudo.jpg
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT .\img\figure5.png
 INPUT .\img\figure5.png
 INPUT img\figure5.png
@@ -1156,10 +1204,6 @@ INPUT .\img\figure5.png
 INPUT .\img\figure5.png
 INPUT .\img\figure5.png
 INPUT .\img\figure5.png
-INPUT .\Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT Escudo.jpg
-INPUT .\Escudo.jpg
 INPUT .\img\figure6_A.png
 INPUT .\img\figure6_A.png
 INPUT img\figure6_A.png
@@ -1224,10 +1268,6 @@ INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT Escudo.jpg
 INPUT .\Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT Escudo.jpg
-INPUT .\Escudo.jpg
 INPUT .\img\figure8_A.png
 INPUT .\img\figure8_A.png
 INPUT img\figure8_A.png
@@ -1256,10 +1296,6 @@ INPUT .\img\figure9_B.png
 INPUT .\img\figure9_B.png
 INPUT .\img\figure9_B.png
 INPUT .\img\figure9_B.png
-INPUT .\Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT Escudo.jpg
-INPUT .\Escudo.jpg
 INPUT .\img\figure10.png
 INPUT .\img\figure10.png
 INPUT img\figure10.png
@@ -1271,49 +1307,40 @@ INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT Escudo.jpg
 INPUT .\Escudo.jpg
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-32.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-32.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-32.def
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\ucs\uni-32.def
 INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT Escudo.jpg
 INPUT .\Escudo.jpg
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT d:\Archivos de usuario\Documentos\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\base\8r.enc
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmss10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmss10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\fonts\type1\public\xypic\xyatip10.pfb
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\fonts\type1\public\xypic\xyatip10.pfb
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\fonts\type1\public\xypic\xybtip10.pfb

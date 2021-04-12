@@ -1,8 +1,11 @@
 %Preamble
-\pdfminorversion=4
-\documentclass[7pt]{article}
+\documentclass[11pt,a4paper,twocolumn]{article}
+\brokenpenalty=10000 
+\hyphenpenalty=10000 
 \usepackage[spanish]{babel}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
 \usepackage{tabularx} % extra features for tabular environment
 \usepackage{amsmath}  % improve math presentation
 \usepackage{graphicx} % takes care of graphic including machinery
@@ -12,6 +15,7 @@
 \usepackage{booktabs}
 \usepackage{subcaption}
 \usepackage{fancyhdr}
+\usepackage{authblk}
 \usepackage{parskip}
 \usepackage{amssymb, amsmath} % Paquetes matemáticos de la American Mathematical Society
 \usepackage{float}
@@ -25,11 +29,11 @@
 
 \geometry{
     papersize = {216mm, 279mm},
-    width = 16.6cm,
+    width = 20cm,
     height = 25cm,
     headsep = 5mm,
     head = 2.8cm,
-    marginpar = 5mm,
+    marginpar = 2mm,
     includeall,
 }
 
@@ -44,7 +48,7 @@
     \textsf{
         Transformada de Fourier aplicado a una función Diente de Sierra no periódica\\
         Teoría de telecomunicaciones I, Grupo A12\\
-        \date{\today}.   
+        \date{\today}   
     }
 }
 \fancyfoot[C]{\thepage}
@@ -62,37 +66,54 @@
 
 %++++++++++++++++++++++++++++++++++++++++
 %Content
+\usepackage[small,compact]{titlesec}
+\titleformat{\subsubsection}[runin]
+            {\normalfont\it}
+            {\thesubsubsection}{0.5em}{}[:]
 
-\title{\textbf{Transformada de Fourier}}
-\author{
-    Jefry Nicolás Chicaiza - \url{jefryn@unicauca.edu.co}\\
-    Jose Nicolás Zambrano - \url{jnzambranob@unicauca.edu.co}
-}
+\renewcommand*{\Authsep}{ y }
+\renewcommand*{\Authand}{ y }
+\renewcommand*{\Authands}{, }
+\renewcommand*{\Affilfont}{\normalsize}
+%\renewcommand*{\Authfont}{\bfseries}    % make author names boldface    
+\setlength{\affilsep}{0.5em}   % set the space between author and affiliation
+
+\title{
+    \fontsize{26}{26}\selectfont 
+    \textbf{Transformada de Fourier}}
+
+\author[1]{Jefry Nicolás Chicaiza}
+\author[2]{Jose Nicolás Zambrano}
+\affil[1]{jefryn@unicauca.edu.co}
+\affil[2]{jnzambranob@unicauca.edu.co}
 \date{}
 
 \begin{document}
 \maketitle
 \thispagestyle{fancy}
-\section*{Introducción}
+\section{Introducción}
     En el siguiente documento se desarrollará el informe del Trabajo 2 de la asignatura 
     Teoría de las telecomunicaciones 1. El trabajo presenta inicialmente el desarrollo 
     analítico de la Transformada de Fourier a la señal planteada, la cual es del tipo 
-    "diente de sierra"  trasladado en el tiempo y no periódica.\\
-    \\
+    "diente de sierra"  trasladado en el tiempo y no periódica.
+    
     Iniciar con el desarrollo analítico es necesario debido a que para alcanzar los 
-    resultados esperados en la simulación, se requiere conocer de antemano los coeficientes 
-    de la serie de Fourier que permitirán reconstruir la señal a través de iteraciones 
-    realizadas con MATLAB.\\
-    \\
+    resultados esperados en la simulación, se requiere conocer de antemano la función que 
+    representa dicha Transformada de la señal, esto permitirá realizar una comparación
+    para llegar a confirmar que se hizo una correcta adecuación del algoritmo realizado en MATLAB.
+    
+    
+    
+
     Posteriormente se abordaran las hipótesis planteadas en el documento guiá del trabajo 
     y se buscará llegar a conclusiones y síntesis a partir de los datos obtenidos en la 
-    simulación de los diferentes escenarios.\\
-    \\
+    simulación de los diferentes escenarios.
+    
     Los teoremas e hipótesis nos dicen que la serie de Fourier de cualquier señal periódica de potencia 
     finita la podemos obtener por medio de una suma infinita de funciones sinusoidales. La serie de 
     Fourier de una señal pueden expresarse de dos maneras, una representada por serie trigonométrica y 
-    otra con representación de serie compleja.\\ 
-    \\
+    otra con representación de serie compleja. 
+    
     En este documento unicamente se realiza los cálculos de la serie de Fourier para la señal propuesta 
     con la representación trigonométrica, que observamos a continuación:
 
@@ -102,18 +123,18 @@
     \end{equation}
     
     Donde los términos $a_{0}$, $a_{n}$ y $b_{n}$ son los coeficientes de la serie de Fourier, de los cuales
-    es necesario realizar cálculos para encontrar sus valores y lograr representar la serie de la señal dada.\\
-    \\
+    es necesario realizar cálculos para encontrar sus valores y lograr representar la serie de la señal dada.
+   
     El desarrollo de este documento esta constituido por una sesión que brinda información 
     de como se obtuvo las diferentes expresiones y el plan de pruebas, que hacen posible la 
     implementación de variados escenarios en la simulación.
    
-\section*{Metodología}
+\section{Metodología}
     La metodología empleada para el desarrollo de la serie de Fourier a la señal planteada se 
     logro mediante la aplicación de los teoremas e hipótesis, en el apartado anterior se menciono 
     la necesidad de calcular los valores de ciertos términos para logra obtener la representación 
-    matemática de la serie de Fourier de la señal planteada.\\ 
-    \\
+    matemática de la serie de Fourier de la señal planteada. 
+    
     En primer lugar es importante conocer el comportamiento que nos describe los términos, el primer 
     termino de la serie, $a_{0}$, no está asociado con una frecuencia y es una constante, además es 
     conocido como el nivel DC de la señal, representa el cambio de la señal sobre un nivel arbitrario 
@@ -177,12 +198,12 @@
     Para el valor de los términos restantes es importante mencionar que con frecuencia las simetrías simplifican 
     a los problemas matemáticos. En el caso de la series de Fourier, se utiliza la simetría en la paridad para 
     simplificar el problema. En el caso de funciones pares el desarrollo de la serie de Fourier implica solamente 
-    la necesidad de calcular $a_{0}$ y $a_{n}$, y sólo $b_{n}$ para impares \cite{parimpar}.\\
-    \\
+    la necesidad de calcular $a_{0}$ y $a_{n}$, y sólo $b_{n}$ para impares \cite{parimpar}.
+    
     La señal que concierne a este texto podemos deducir de su gráfica(figura \ref{figure1}) que no se comporta igual que su imagen respecto 
     al eje $y$, ni tampoco hay presencia de simetría al rotar la gráfica en 180 grados. Por tanto, se trata de una 
-    función sin paridad, lo que implica la necesidad de calcular todos los términos de la serie trigonométrica de Fourier .\\
-    \\
+    función sin paridad, lo que implica la necesidad de calcular todos los términos de la serie trigonométrica de Fourier .
+    
     Las siguientes expresiones corresponden al calculo de los coeficientes $a_{n}$ y $b_{n}$:
 
     \begin{equation}
@@ -196,7 +217,7 @@
 
     los resultados obtenidos al realizar los cálculos para los coeficientes son los siguientes (los cálculos que 
     se presentan en este documento están simplificados, por tal motivo se integra el paso a paso en el apartado de 
-    Anexos):\\
+    Anexos):
 
     \begin{itemize}
         \item Calculo $a_{n}$
@@ -223,24 +244,24 @@
     que construyen la señal planteada, reemplazamos las ecuaciones \ref{equation7} y \ref{equation8} en la ecuación 
     \ref{equation1}:
 
-    \begin{multline}
-        x(t)=\frac{1}{2}+\sum_{n=1}^{\infty} \left[\frac{1}{\pi n} sin\left(\frac{7\pi n}{4}\right)+\frac{1}{2\pi^2 n^2}\left(cos\left(\frac{7\pi n}{4}\right)-cos\left(\frac{\pi n}{4}\right)\right)
-        \right]cos\left(\frac{\pi nt}{2}\right)...\\ +\left[-\frac{1}{\pi n} cos\left(\frac{7\pi n}{4}\right)+\frac{1}{2\pi^2 n^2}\left(sin\left(\frac{7\pi n}{4}\right)+sin\left(\frac{\pi n}{4}\right)\right)
-        \right]sin\left(\frac{\pi nt}{2}\right)
-        \label{equation9}
-    \end{multline}
+    %\begin{multline}
+        %x(t)=\frac{1}{2}+\sum_{n=1}^{\infty} \left[\frac{1}{\pi n} sin\left(\frac{7\pi n}{4}\right)+\frac{1}{2\pi^2 n^2}\left(cos\left(\frac{7\pi n}{4}\right)-cos\left(\frac{\pi n}{4}\right)\right)
+        %\right]cos\left(\frac{\pi nt}{2}\right)... +\left[-\frac{1}{\pi n} cos\left(\frac{7\pi n}{4}\right)+\frac{1}{2\pi^2 n^2}\left(sin\left(\frac{7\pi n}{4}\right)+sin\left(\frac{\pi n}{4}\right)\right)
+        %\right]sin\left(\frac{\pi nt}{2}\right)
+        %\label{equation9}
+    %\end{multline}
 
-    Ahora que se ha obtenido la expresión que representa la serie de Fourier de la señal, se procederá a realizar 
+    %Ahora que se ha obtenido la expresión que representa la serie de Fourier de la señal, se procederá a realizar 
     un análisis de la serie de Fourier a través de una simulación realizada en computadora, en ella podremos 
     visualizar como se resuelve para cientos, o incluso miles, de componentes. Podemos comprobar qué tan buena 
     es la representación reconstruyendo la señal utilizando diferentes cantidades de componentes, para esto 
-    se realizaran pruebas con un Script desarrollado en MATLAB.\\
-    \\
+    se realizaran pruebas con un Script desarrollado en MATLAB.
+    
     Después de haber realizado el planteamiento de los fundamentos matemáticos requeridos para solucionar 
     el problema, se procedió a realizar la planificación del diseño practico requerido para solucionar 
-    el mismo.\\
-    \\
-    Se pueden identificar 6 objetivos clave a desarrollar con la simulación en MATLAB:\\
+    el mismo.
+    
+    Se pueden identificar 6 objetivos clave a desarrollar con la simulación en MATLAB:
 
     \begin{enumerate}
         \item Reconstrucción de la señal dada a partir de la serie de Fourier.
@@ -257,8 +278,8 @@
 
     Después de realizar el análisis de los requerimientos anteriores, se plantea el siguiente \underline{esquema}
     \underline{general} para el desarrollo de la simulación:
-    \\
-    \begin{center}
+    
+   \begin{center}
          \xymatrix{
             % primera fila
             *++[F-,]\txt{1. Declaración de variables y espacios \\
@@ -278,51 +299,50 @@
 
     Para la realización del script de simulación se utilizó el paradigma de programación estructurada, ya 
     que el mismo permite agilidad en el desarrollo del código, así como también facilita el desarrollo de los 
-    planteamientos matemáticos necesarios para lograr los objetivos de la simulación.\\
-    \\
+    planteamientos matemáticos necesarios para lograr los objetivos de la simulación.
+    
     Adicionalmente la programación estructurada, brinda al observador del código una perspectiva secuencial en 
     el desarrollo del algoritmo de simulación, y, por lo tanto, un orden lógico y trazable de los resultados 
-    esperados en la ejecución de este.\\
+    esperados en la ejecución de este.
     
-    \textbf{Plan de pruebas}\\
-    \\
+    \subsection{Plan de pruebas}
     Retomando los 6 objetivos clave a desarrollar con la simulación; se plantea el siguiente plan de pruebas 
     para cadaa uno de ellos:
 
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{| m{5cm} | m{10cm} |}
-                \hline
-                \textbf{Objetivo Clave} & \textbf{Pruebas y Criterio de Satisfacción} \\ \hline
-                \multirow{3}{4.5cm}{Reconstrucción de la señal} 
-                    & Se dibuja mediante la simulación la señal original y la señal reconstruida. \\ \cline{2-2} 
-                    & Se observan similitudes y diferencias. \\ \cline{2-2}
-                    & Se concluye si las señales son gráficamente similares o diferentes. \\ \hline
-                \multirow{4}{4.5cm}{Justificación del número de Coeficientes}
-                    & Se calcula la igualdad de Parseval. \\ \cline{2-2} 
-                    & Se observa el fenómeno de Gibbs en la vecindad delas desigualdades de la señal. \\ \cline{2-2}
-                    & Se analizan los valores obtenidos con 5 diferentes números de armónicos. \\ \cline{2-2}
-                    & Se concluye el valor de armónicos necesarios para tener una reconstrucción 
-                    aceptable de la señal. \\ \hline
-                \multirow{3}{4.5cm}{Análisis del espectro de magnitud cuando el periodo $T$ cambia}
-                    & Se dibuja y se analiza el espectro de magnitud con periodo $T=4$ y $N=100$. \\ \cline{2-2}
-                    & Se dibuja y se analiza el espectro de magnitud con el mismo $N$ y 3 valores diferentes 
-                    de periodo $T$. \\ \cline{2-2}
-                    & Se analiza las diferencias entre las gráficas. \\ \hline
-                \multirow{3}{4.5cm}{Análisis del espectro de magnitud cuando se agregan ceros}
-                    & Se dibuja y se analiza el espectro de magnitud con periodo $T_r=4$, $N=100$ y periodo de ceros $T_0=0$. \\ \cline{2-2}
-                    & Se dibuja y se analiza el espectro de magnitud con el mismo $N$, $T_r$ y 3 valores diferentes de periodo de ceros $T_0$. \\ \cline{2-2}
-                    & Se analiza las diferencias entre las gráficas. \\ \hline
-                \multirow{2}{4.5cm}{¿Número de coeficientes cambian cuando $T$ cambia?}
-                    & Se utilizan los resultados del objetivo 3 para analizar la igualdad de Parseval en cada caso. \\ \cline{2-2}
-                    & Se concluye si el valor de armónicos necesarios para tener una reconstrucción aceptable de la señal cambia o se mantiene. \\ \hline
-                \multirow{2}{4.5cm}{¿Número de coeficientes cambian cuando se agregan ceros?}
-                    & Se utilizan los resultados del objetivo 4 para analizar la igualdad de Parseval en cada caso. \\ \cline{2-2}
-                    & Se concluye si el valor de armónicos necesarios para tener una reconstrucción aceptable de la señal cambia o se mantiene. \\ \hline
-            \end{tabular}
-        \end{center}
-        \caption{Plan de pruebas.}
-    \end{table}
+    %\begin{table}[H]
+        %\begin{center}
+            %\begin{tabular}{| m{5cm} | m{10cm} |}
+                %\hline
+                %\textbf{Objetivo Clave} & \textbf{Pruebas y Criterio de Satisfacción} \\ \hline
+                %\multirow{3}{4.5cm}{Reconstrucción de la señal} 
+                    %& Se dibuja mediante la simulación la señal original y la señal reconstruida. \\ \cline{2-2} 
+                    %& Se observan similitudes y diferencias. \\ \cline{2-2}
+                    %& Se concluye si las señales son gráficamente similares o diferentes. \\ \hline
+                %\multirow{4}{4.5cm}{Justificación del número de Coeficientes}
+                    %& Se calcula la igualdad de Parseval. \\ \cline{2-2} 
+                    %& Se observa el fenómeno de Gibbs en la vecindad delas desigualdades de la señal. \\ \cline{2-2}
+                    %& Se analizan los valores obtenidos con 5 diferentes números de armónicos. \\ \cline{2-2}
+                    %& Se concluye el valor de armónicos necesarios para tener una reconstrucción 
+                    %aceptable de la señal. \\ \hline
+                %\multirow{3}{4.5cm}{Análisis del espectro de magnitud cuando el periodo $T$ cambia}
+                    %& Se dibuja y se analiza el espectro de magnitud con periodo $T=4$ y $N=100$. \\ \cline{2-2}
+                    %& Se dibuja y se analiza el espectro de magnitud con el mismo $N$ y 3 valores diferentes 
+                    %de periodo $T$. \\ \cline{2-2}
+                    %& Se analiza las diferencias entre las gráficas. \\ \hline
+                %\multirow{3}{4.5cm}{Análisis del espectro de magnitud cuando se agregan ceros}
+                    %& Se dibuja y se analiza el espectro de magnitud con periodo $T_r=4$, $N=100$ y periodo de ceros $T_0=0$. \\ \cline{2-2}
+                    %& Se dibuja y se analiza el espectro de magnitud con el mismo $N$, $T_r$ y 3 valores diferentes de periodo de ceros $T_0$. \\ \cline{2-2}
+                    %& Se analiza las diferencias entre las gráficas. \\ \hline
+                %\multirow{2}{4.5cm}{¿Número de coeficientes cambian cuando $T$ cambia?}
+                    %& Se utilizan los resultados del objetivo 3 para analizar la igualdad de Parseval en cada caso. \\ \cline{2-2}
+                    %& Se concluye si el valor de armónicos necesarios para tener una reconstrucción aceptable de la señal cambia o se mantiene. \\ \hline
+                %\multirow{2}{4.5cm}{¿Número de coeficientes cambian cuando se agregan ceros?}
+                    %& Se utilizan los resultados del objetivo 4 para analizar la igualdad de Parseval en cada caso. \\ \cline{2-2}
+                    %& Se concluye si el valor de armónicos necesarios para tener una reconstrucción aceptable de la señal cambia o se mantiene. \\ \hline
+            %\end{tabular}
+        %\end{center}
+        %\caption{Plan de pruebas.}
+    %\end{table}
 
 \section*{Análisis de Resultados}
     Para la obtención de los resultados se realizaron dos scripts en MATLAB. En el primer script se 
@@ -331,19 +351,19 @@
     cancelaban. Esta primera simulación resultaba valida para reconstruir la señal original a partir de la 
     expresión de la serie de Fourier, sin embargo, evaluar los diferentes escenarios de pruebas 
     planteadas en el trabajo como agregar espacios en blanco o modificar el periodo de la señal 
-    requeriría de cambios drásticos en la escritura y evaluación del código.\\
-    \\
+    requeriría de cambios drásticos en la escritura y evaluación del código.
+    
     El anterior escenario fue motivación para realizar una segunda versión del script, que permitiera 
     generalizar los escenarios planteados en el trabajo y permitiera alcanzar conclusiones completas 
-    del mismo.\\
-    \\
+    del mismo.
+    
     El segundo código realiza los cálculos de los coeficientes de manera simbólica, los cuales luego son 
     evaluados en vectores numéricos aumentando así su velocidad de procesamiento. El límite 
     practico en tiempo de ejecución se encontró en un valor cercano a los 5000 armónicos. Sin 
     embargo, debido a que no es necesaria tal cantidad de cálculos, se acotó el máximo posible de 
     armónicos a 100, los cuales permiten de manera suficiente alcanzar los objetivos esperados del 
-    trabajo.\\
-    \\
+    trabajo.
+    
     \textbf{Desarrollo del Objetivo Clave 1--Reconstrucción de la señal}
 
     \begin{figure}[H]
@@ -377,8 +397,8 @@
     generan picos de amplitud explicados por el fenómeno de Gibbs. Las figuras anteriormente 
     expuestas corresponden a una simulación realizada con la sumatoria de los 100 primeros 
     armónicos. Mas adelante se abordarán escenarios de simulación con diferentes cantidades de 
-    armónicos en la serie.\\
-    \\
+    armónicos en la serie.
+    
     \textbf{Desarrollo del Objetivo Clave 2--Justificación del Numero de Coeficientes}
 
     \begin{figure}[H]
@@ -409,8 +429,8 @@
 
     Para justificar la cantidad de coeficientes o armónicos que son necesarios para reconstruir está 
     señal de manera adecuada, se usaran dos criterios diferentes: \textbf{La igualdad de Parseval} y el 
-    \textbf{fenómeno de Gibbs evaluado en el punto de la discontinuidad}.\\
-    \\
+    \textbf{fenómeno de Gibbs evaluado en el punto de la discontinuidad}.
+    
     Se considerará que la cantidad de armónicos es suficiente cuando la relación entre los dos lados 
     de la igualdad de Parseval \textbf{supere el 99\% de similitud}, esto es:
 
@@ -446,15 +466,15 @@
     \end{equation*}
 
     donde $t_0=3.5$ que es el valor de la discontinuidad. Al evaluar en la simulación 
-    confirmamos que:\\
-    \\
+    confirmamos que:
+    
      $Sf(t_0)=\frac{f(t_0^+)+f(t_0^-)}{2}=0.5000$ por lo que se confirma que el fenómeno de Gibbs 
      en la desigualdad converge a su valor medio. Por lo tanto, verificamos que 15 armónicos 
-     son suficientes para tener una reconstrucción aceptable de la señal. \\
-     \\
+     son suficientes para tener una reconstrucción aceptable de la señal. 
+     
      \textbf{Desarrollo del Objetivo Clave 3 -- Análisis del espectro de magnitud cuando el periodo $T$ cambia}
-     \\
-     \\
+     
+     
      Para desarrollar este objetivo clave se realizaron 4 escenarios diferentes de simulación variando la 
      duración del diente de sierra, es decir, su periodo. Se realiza las simulaciones con un número 
      de 100 armónicos; esto se hace para poder apreciar mejor el espectro de magnitud 
@@ -491,8 +511,8 @@
     magnitudes} debido a que la \textbf{forma de la señal periódica permanece igual y el periodo es 
     compensado por el cambio de la pendiente de la rampa}, por lo cual las integrales que 
     definen a los coeficientes permanecen iguales ya que sus periodos se normalizan. Para el 
-    periodo afecta directamente a la frecuencia.\\
-    \\
+    periodo afecta directamente a la frecuencia.
+    
     Se puede concluir que un cambio en el periodo de la señal únicamente cambia el valor de 
     frecuencia normalizada al que pertenece cada armónico. Para periodos mas pequeños, se 
     tiene que la frecuencia aumente, y para periodos grandes la frecuencia disminuye tal cual 
@@ -558,7 +578,7 @@
     la composición de los coeficientes antes mencionada.
 
     \textbf{Desarrollo del Objetivo Clave 5 -- ¿El número de coeficientes requeridos cambian cuando $T$ cambia?}
-    \\\\
+    
     Los valores que se toman para este escenario son $T=(0.1,1,4,8,100)$, es decir, los mismos 
     periodos que para el Objetivo 3 sin ceros añadidos; se adiciona el valor de 100 para llevar el 
     periodo a un valor mucho más grande que el valor del periodo original de la señal. En esta 
@@ -566,54 +586,54 @@
     los periodos a evaluar y a observar el fenómeno de Gibbs en las discontinuidades, como se hizo en 
     el Objetivo 2.
 
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{| m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} |}
-                \hline
-                \textbf{Número de Armónicos} & \textbf{Periodo} & \textbf{Valor de la Relación de Parseval} & \textbf{Valor de la Serie en la discontinuidad} & \textbf{Valor medio en la discontinuidad} \\ \hline
-                15 & 0.1 & 99.0198 & 0.5 & 0.5 \\ \hline
-                15 & 1 & 99.0198 & 0.5 & 0.5 \\ \hline
-                15 & 4 & 99.0198 & 0.5 & 0.5 \\ \hline
-                15 & 8 & 99.0198 & 0.4850 & 0.5 \\ \hline
-                15 & 100 & 99.0198 & 0.5 & 0.5 \\ \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
+    %\begin{table}[H]
+        %\begin{center}
+            %\begin{tabular}{| m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} |}
+                %\hline
+                %\textbf{Número de Armónicos} & \textbf{Periodo} & \textbf{Valor de la Relación de Parseval} & \textbf{Valor de la Serie en la discontinuidad} & \textbf{Valor medio en la discontinuidad}  \hline
+                %15 & 0.1 & 99.0198 & 0.5 & 0.5 \\ \hline
+                %15 & 1 & 99.0198 & 0.5 & 0.5 \\ \hline
+                %15 & 4 & 99.0198 & 0.5 & 0.5 \\ \hline
+                %15 & 8 & 99.0198 & 0.4850 & 0.5 \\ \hline
+                %15 & 100 & 99.0198 & 0.5 & 0.5 \\ \hline
+            %\end{tabular}
+        %\end{center}
+    %\end{table}
 
     De los valores en la tabla se puede concluir que el cambio en el periodo del diente de 
     sierra no afecta el número de armónicos requeridos como mínimo para reconstruir la 
     señal. Esto ocurre debido a que las funciones periódicas que componen a los coeficientes 
     se ajustan proporcionalmente al ancho del pulso, modificando de forma proporcional su 
-    frecuencia fundamental.\\
-    \\
+    frecuencia fundamental.
+    
     Para el caso del valor de la serie en la discontinuidad para el periodo $T=8$, este desfase 
     ocurre porque la simulación computarizada no tiene valores infinitos para definir el vector 
     de tiempo y el vector de la serie de Fourier. Todos los valores son discretos, por lo que hay 
     escenarios en los cuales el tiempo $t$ no esta definido para el valor exacto donde se 
     presenta la discontinuidad. Esto hace que se presente un error de cuantificación el cual se 
     evade parcialmente en la simulación encontrando el valor más cercano a la discontinuidad 
-    y tomando ese valor.\\
-    \\
+    y tomando ese valor.
+    
     \textbf{Desarrollo del Objetivo Clave 6 -- ¿El número de coeficientes requeridos cambian cuando se agregan ceros}
-    \\\\
+    
     Tomando como referencia los mismos valores del Objetivo 4; se simulan los mismos 
     escenarios: $T_0=(0,4,8,100,1000)$. Se agrega el valor de 1000 con el objetivo de evaluar si la 
     forma de la señal reconstruida mantiene su integridad. El periodo de la rampa se mantiene 
     constante en 4 segundos.
 
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{| m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} |}
-                \hline
-                \textbf{Número de Armónicos} & \textbf{Periodo de duración de los ceros} & \textbf{Valor de la Relación de Parseval} & \textbf{Valor de la Serie en la discontinuidad} & \textbf{Valor medio en la discontinuidad} \\ \hline
-                15 & 0 & 99.0198 & 0.5 & 0.5 \\ \hline
-                15 & 4 & 98.0391 & 0.5087 & 0.5 \\ \hline
-                15 & 8 & 97.0611 & 0.5095 & 0.5 \\ \hline
-                15 & 100 & 70.4557 & 0.5015 & 0.5 \\ \hline
-                15 & 1000 & 9.2372 & 0.0616 & 0.5 \\ \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
+    %\begin{table}[H]
+        %\begin{center}
+            %\begin{tabular}{| m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} |}
+                %\hline
+                %\textbf{Número de Armónicos} & \textbf{Periodo de duración de los ceros} & \textbf{Valor de la Relación de Parseval} & \textbf{Valor de la Serie en la discontinuidad} & \textbf{Valor medio en la discontinuidad} \\ \hline
+                %15 & 0 & 99.0198 & 0.5 & 0.5 \\ \hline
+                %15 & 4 & 98.0391 & 0.5087 & 0.5 \\ \hline
+                %15 & 8 & 97.0611 & 0.5095 & 0.5 \\ \hline
+                %15 & 100 & 70.4557 & 0.5015 & 0.5 \\ \hline
+                %15 & 1000 & 9.2372 & 0.0616 & 0.5 \\ \hline
+            %\end{tabular}
+        %\end{center}
+    %\end{table}
 
     Es evidente que al igual que en el objetivo 4, el agregar ceros a la función original modifica 
     de manera importante a la señal reconstruida. Para este caso se observa que, para cada 
@@ -639,19 +659,19 @@
     nuevamente el criterio establecido del 99 por ciento, encontrando así los siguientes 
     valores:
 
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{| m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} |}
-                \hline
-                \textbf{Número de Armónicos} & \textbf{Periodo de duración de los ceros} & \textbf{Valor de la Relación de Parseval} & \textbf{Valor de la Serie en la discontinuidad} & \textbf{Valor medio en la discontinuidad} \\ \hline
-                15 & 0 & 99.0198 & 0.5 & 0.5 \\ \hline
-                30 & 4 & 99.0034 & 0.5266 & 0.5 \\ \hline
-                46 & 8 & 99.0192 & 0.4662 & 0.5 \\ \hline
-                395 & 100 & 99.0009 & 0.2371 & 0.5 \\ \hline
-                3815 & 1000 & 99.0002 & 0.8631 & 0.5 \\ \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
+    %\begin{table}[H]
+        %\begin{center}
+            %\begin{tabular}{| m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} | m{2.5cm} |}
+                %\hline
+                %\textbf{Número de Armónicos} & \textbf{Periodo de duración de los ceros} & \textbf{Valor de la Relación de Parseval} & \textbf{Valor de la Serie en la discontinuidad} & \textbf{Valor medio en la discontinuidad} \\ \hline
+                %15 & 0 & 99.0198 & 0.5 & 0.5 \\ \hline
+                %30 & 4 & 99.0034 & 0.5266 & 0.5 \\ \hline
+                %46 & 8 & 99.0192 & 0.4662 & 0.5 \\ \hline
+                %395 & 100 & 99.0009 & 0.2371 & 0.5 \\ \hline
+                %3815 & 1000 & 99.0002 & 0.8631 & 0.5 \\ \hline
+            %\end{tabular}
+        %\end{center}
+    %\end{table}
 
     Se concluye que el número de armónicos requeridos para tener una reconstrucción 
     adecuada de la señal aumenta proporcionalmente a la duración del periodo de ceros 
@@ -693,18 +713,18 @@
     Se concluye que una adecuada optimización del código es necesaria para la evaluación de cantidades 
     considerables de armónicos. Una inadecuada implementación del código puede llevar a hacer inviable 
     la simulación en situaciones de múltiples repeticiones. Además el uso de cálculos numéricos en vez 
-    de cálculos simbólicos acelera el tiempo de ejecución del algoritmo de simulación.\\
-    \\
+    de cálculos simbólicos acelera el tiempo de ejecución del algoritmo de simulación.
+    
     Un adecuado plan de pruebas es necesario antes de iniciar con la construcción de un algoritmo 
     de simulación. Esto debido a que si se inicia construyendo primero la simulación, se corre el 
-    riesgo de perder trabajo debido a un inadecuado planteamiento del algoritmo.\\
-    \\
+    riesgo de perder trabajo debido a un inadecuado planteamiento del algoritmo.
+    
     La igualdad de Parseval es una herramienta simple y adecuada para evaluar si la reconstrucción de 
     una señal a partir de la serie de Fourier es adecuada o no. Por otro lado, el criterio de Gibbs 
     presenta dificultades para su evaluación en sistemas de tiempo discreto como lo es una simulación 
     computacional. Esto debido a la incertidumbre generada en los puntos de desigualdad y al error de 
-    cuantificación que se introduce debido a ello.\\
-    \\
+    cuantificación que se introduce debido a ello.
+    
     Agregar ceros entre las repeticiones de un pulso periódico causa que el espectro de magnitud 
     se empiece a asemejar al espectro de magnitud de un tren de pulsos rectangulares. Otro aspecto a 
     considerar es el desplazamiento temporal de una función periódica no causa modificaciones a su espectro 
