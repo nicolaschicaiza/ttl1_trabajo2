@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber build/main"] 1618374339 "build/main.bcf" "build/main.bbl" "build/main" 1618374391
-  "bibliografia.bib" 1618374308 977 35bae91d39dd65101be3319d11c2102e ""
-  "build/main.bcf" 1618374385 106304 63d96c5031bbf96dc49bee32fa960bcf "pdflatex"
-  "build\main.bcf" 1618374385 106304 63d96c5031bbf96dc49bee32fa960bcf ""
+["biber build/main"] 1618453367 "build/main.bcf" "build/main.bbl" "build/main" 1618453434
+  "bibliografia.bib" 1618375869 568 93bc107066d393b85bc4809924dd994a ""
+  "build/main.bcf" 1618453432 106304 63d96c5031bbf96dc49bee32fa960bcf "pdflatex"
+  "build\main.bcf" 1618453432 106304 63d96c5031bbf96dc49bee32fa960bcf ""
   (generated)
   "build/main.blg"
   "build/main.bbl"
-["pdflatex"] 1618374368 "c:/Users/Nicolas Chicaiza/Sourcetree/TTL1/Trabajo 2/Documentos/Documento_Latex/main.tex" "c:/Users/Nicolas Chicaiza/Sourcetree/TTL1/Trabajo 2/Documentos/Documento_Latex/build/main.pdf" "main" 1618374391
+["pdflatex"] 1618453406 "c:/Users/Nicolas Chicaiza/Sourcetree/TTL1/Trabajo 2/Documentos/Documento_Latex/main.tex" "c:/Users/Nicolas Chicaiza/Sourcetree/TTL1/Trabajo 2/Documentos/Documento_Latex/build/main.pdf" "main" 1618453434
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/courier/pcrr8r.tfm" 1136765053 1292 bd42be2f344128bff6d35d98474adfe3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/courier/pcrr8t.tfm" 1136765053 1384 4632f5e54900a7dadbb83f555bc61e56 ""
@@ -262,19 +262,19 @@
   "C:/Users/Nicolas Chicaiza/AppData/Roaming/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/Nicolas Chicaiza/AppData/Roaming/MiKTeX/tex/latex/titlesec/titlesec.sty" 1571243658 48596 2b6a95da931c07a430b1a61904aaa42d ""
   "Escudo.jpg" 1613409551 705753 48ca27fa13c5e68729775746a3cad514 ""
-  "build/main.aux" 1618374385 2996 e4a1f727df31d6193d930e0a3369a2a1 "pdflatex"
-  "build/main.bbl" 1618374347 3425 c975d9f21a2e8adc7d62a6bcf76bbdd1 "biber build/main"
-  "build/main.out" 1618374385 610 21e76dc69f323d8dd5c7618274670224 "pdflatex"
-  "build/main.run.xml" 1618374385 2435 b876fd2f2753d80dcbc12cbf67e36d21 "pdflatex"
-  "c:/Users/Nicolas Chicaiza/Sourcetree/TTL1/Trabajo 2/Documentos/Documento_Latex/build/main.aux" 1618374385 2996 e4a1f727df31d6193d930e0a3369a2a1 ""
-  "c:/Users/Nicolas Chicaiza/Sourcetree/TTL1/Trabajo 2/Documentos/Documento_Latex/main.tex" 1618374320 5049 4bc9ad5392a7d3f5a0cc7441bbb03815 ""
-  "main.tex" 1618374320 5049 4bc9ad5392a7d3f5a0cc7441bbb03815 ""
+  "build/main.aux" 1618453432 2928 848d67ce8e05d563d3862f4d45b9f51c "pdflatex"
+  "build/main.bbl" 1618453377 2189 1fa023810bde5a752624cfd5f2f894fa "biber build/main"
+  "build/main.out" 1618453432 610 21e76dc69f323d8dd5c7618274670224 "pdflatex"
+  "build/main.run.xml" 1618453432 2435 b876fd2f2753d80dcbc12cbf67e36d21 "pdflatex"
+  "c:/Users/Nicolas Chicaiza/Sourcetree/TTL1/Trabajo 2/Documentos/Documento_Latex/build/main.aux" 1618453432 2928 848d67ce8e05d563d3862f4d45b9f51c ""
+  "c:/Users/Nicolas Chicaiza/Sourcetree/TTL1/Trabajo 2/Documentos/Documento_Latex/main.tex" 1618453359 5055 1669f13f7ccada9e7d1e20a3d23dbeeb ""
+  "main.tex" 1618453359 5055 1669f13f7ccada9e7d1e20a3d23dbeeb ""
   (generated)
+  "c:/Users/Nicolas Chicaiza/Sourcetree/TTL1/Trabajo 2/Documentos/Documento_Latex/build/main.log"
   "build/main.pdf"
-  "build/main.run.xml"
   "c:/Users/Nicolas Chicaiza/Sourcetree/TTL1/Trabajo 2/Documentos/Documento_Latex/build/main.pdf"
   "build/main.aux"
-  "build/main.out"
-  "c:/Users/Nicolas Chicaiza/Sourcetree/TTL1/Trabajo 2/Documentos/Documento_Latex/build/main.log"
   "build/main.log"
+  "build/main.out"
+  "build/main.run.xml"
   "build/main.bcf"

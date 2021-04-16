@@ -19,33 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{silviaRB}{article}{}
-      \name{author}{1}{}{%
-        {{hash=e6376a6ae7d74c74a868da0a5b4004a1}{%
-           family={Silva},
-           familyi={S\bibinitperiod},
-           given={Maria},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Popayán}%
-      }
-      \strng{namehash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \strng{fullhash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \strng{bibnamehash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \strng{authorbibnamehash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \strng{authornamehash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \strng{authorfullhash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Ejercicio Transformada de Fourier}}
-      \field{year}{2021}
-      \verb{file}
-      \verb :G$\backslash$:/Mi unidad/Ingenieria electonica y telecomunicaciones/Teor{\'{i}}a de Telecomunicaciones I (Comunicaciones Anal{\'{o}}gicas)/2021.1/2. An{\'{a}}lisis de Fourier/14. Ejemplo aplicaci{\'{o}}n de las propiedades FT/RB 2021-03-10 18.20.41.pdf:pdf
-      \endverb
-    \endentry
     \entry{Poularikas2007}{book}{}
       \name{author}{1}{}{%
         {{hash=e1b67e6a1034ac6f7b8650a2f73021b9}{%
@@ -84,6 +57,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{silviaRB}
 \endrefsection
 \endinput
 
