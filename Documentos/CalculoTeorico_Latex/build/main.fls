@@ -1,7 +1,7 @@
-PWD c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex
+PWD c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex
 INPUT C:\Users\Nicolas Chicaiza\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\main.tex
-OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.log
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\main.tex
+OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
@@ -876,17 +876,6 @@ INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authbl
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\preprint\authblk.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\appendix\appendix.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\appendix\appendix.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\appendix\appendix.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\appendix\appendix.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\appendix\appendix.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\appendix\appendix.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\appendix\appendix.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\appendix\appendix.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\appendix\appendix.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\appendix\appendix.sty
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\appendix\appendix.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\parskip\parskip.sty
@@ -1110,9 +1099,9 @@ INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.aux
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.aux
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.aux
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
@@ -1120,7 +1109,7 @@ INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-en.ini
-OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
+OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.aux
 INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\lbx\spanish.lbx
 INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\lbx\spanish.lbx
 INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\lbx\spanish.lbx
@@ -1163,13 +1152,13 @@ INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse-generic.tex
-OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.bcf
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.bbl
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.bbl
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.bbl
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.bbl
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.bbl
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.bbl
+OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.bcf
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.bbl
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.bbl
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.bbl
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.bbl
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.bbl
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.bbl
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -1223,18 +1212,18 @@ INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\generic\gettitlestrin
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.pdf
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.pdf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
@@ -1264,6 +1253,7 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
@@ -1288,6 +1278,7 @@ INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1phv.fd
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1phv.fd
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1phv.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\Nicolas Chicaiza\AppData\Local\MiKTeX\pdftex\config\pdftex.map
@@ -1299,32 +1290,22 @@ INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmrc8t.tfm
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
 INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmrc8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.aux
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.out
-INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.run.xml
-OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\Documento_Latex\build\main.run.xml
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.aux
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.out
+INPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.run.xml
+OUTPUT c:\Users\Nicolas Chicaiza\Sourcetree\TTL1\Trabajo 2\Documentos\CalculoTeorico_Latex\build\main.run.xml
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\base\8r.enc
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
@@ -1342,8 +1323,8 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\latxfont\line10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\latxfont\line10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb

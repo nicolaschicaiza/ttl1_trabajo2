@@ -1,7 +1,7 @@
 %Preamble
 \documentclass[11pt,a4paper,twocolumn]{article}
 \brokenpenalty=10000 
-\hyphenpenalty=10000 
+%\hyphenpenalty=10000 
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{times}
@@ -18,6 +18,7 @@
 \usepackage{tcolorbox}
 \usepackage{fancyhdr}
 \usepackage{authblk}
+\usepackage[toc,page]{appendix}
 \usepackage{parskip}
 \usepackage{amssymb, amsmath} % Paquetes matemáticos de la American Mathematical Society
 \usepackage{float}
@@ -66,8 +67,19 @@
 }
 \spanishdecimal{.}
 
+\tcbuselibrary{theorems}
 %++++++++++++++++++++++++++++++++++++++++
 %Content
+
+\addto\captionsspanish{
+    \renewcommand\appendixname{Anexo}
+    \renewcommand\appendixpagename{Anexos}
+    }
+
+\renewcommand{\tablename}{Tabla}
+
+\renewcommand{\baselinestretch}{0.8} % Para indicar el tamaño del entrelineado
+
 \usepackage[small,compact]{titlesec}
 \titleformat{\subsubsection}[runin]
             {\normalfont\it}
@@ -104,17 +116,44 @@
     Iniciar con el desarrollo analítico es necesario debido a que para alcanzar los 
     resultados esperados en la simulación, se requiere conocer de antemano la función que 
     representa dicha Transformada de la señal, esto permitirá comprobar los resultados 
-    obtenidos por medio de un algoritmo realizado en MATLAB.\cite{silviaRB}
+    obtenidos por medio de un algoritmo realizado en MATLAB.
     
     Adicionalmente, las comprobaciones que se plantearán en simulación se realizan a través 
     de la Transformada Rápida de Fourier (FFT, Fast Fourier Transform), que es una clase de 
     algoritmo computacional usado en el procesamiento de señales digitales para reducir en gran 
     medida el número de cálculos en el uso de la Transformada Discreta de Fourier (DFT) y su 
-    inversa, hace de la DFT un procesamiento viable e indispensable.\cite{Poularikas2007}
+    inversa, hace de la DFT un procesamiento viable e indispensable \cite{Poularikas2007}.
 
        
 \section{Metodología}
+    La metodología que se empleo para el desarrollo de la Transformada de Fourier a la señal planteada 
+    se logró mediante la aplicación de los teoremas del material guía a este documento, inicialmente
+    se realizó el cálculo analíticamente para considerar un resultado a partir de dicha teoría y
+    poder comprobar el resultado en una simulación computacional. 
     
+    Para realizar el proceso del cálculo de la transformada de la señal es importante mencionar
+    de donde surge el término de la Transformada de Fourier, surge a partir del estudio de señales
+    periódicas que son representadas por las Series de Fourier, sin embargo, el estudio de las 
+    señales se interrumpe por las señales aperiódicas por no cumplir con la condición de periodicidad \cite{Sauchelli2020}.
+    Por tanto, se plantea que las señales no periódicas se pueden ver como señales de periodos 
+    largos (que tienda al infinito), de esta forma la separación de sus componentes espectrales es
+    despreciable y el espectro de estas señales es continuo \cite{Silva2021}.
+    
+    Dado que la señal es no periódica, hablar de potencia promedio no seria adecuado debido a que 
+    la magnitud tiende a cero cuando el tiempo tiende a infinito, en este caso la señal tiene una
+    energía finita, la cual se define por una integral que puede existir o converger a un valor
+    diferente de cero o indeterminado. Esta es la condición para que una señal pueda representarse
+    en el dominio de la frecuencia utilizando la Transformada de Fourier \cite{Fabian}. Para la función de interés
+    de este documento su valor de energía es:
+    
+    \begin{equation*}
+       \epsilon_x=\int_{-\frac{1}{2}}^{\frac{7}{2}}\left|\frac{1}{4}t + \frac{1}{8}\right|^2 \mathrm{d}t = \frac{4}{3}
+    \end{equation*}
+
+    Después de comprobar que la señal tiene una energía definida y es posible denominarla como no
+    periódica, se procedió a calcular la transformada de la señal resolviendo la integral 
+    característica del teorema, antes de esto se considera la función que representa la gráfica
+    de esta señal de interés:
 
     \begin{figure}[H]
         \centering
@@ -136,13 +175,80 @@
         \label{funcionAsiganda}
     \end{figure}
 
+    El resultado que se obtuvo de la transformada de esta señal con los intervalos observados en la
+    figura \ref{funcionAsiganda} se aprecia a continuación (el paso a paso de el cálculo que se 
+    realizó para esta transformada se puede encontrar en la sección de anexos de este documento):
+    
+    \begin{equation}
+        \tilde{x}(f) = \frac{e^{-j7pi f }(1 - e^{j8\pi f} + j8\pi f)}{16\pi^2 f^2}
+    \end{equation} 
+
+    
+
     \subsection{Plan de pruebas}
 
 \section{Análisis de Resultados}
-
-
-
 \section{Conclusiones}
+
+\appendix
+\section{Cálculo teórico}
+
+Realización de los cálculos matemáticos de la Transformada de Fourier de la señal 
+    asignada, la formula empleada para el cálculo de la transformada es la siguiente:
+
+    \begin{equation}
+        \tilde{x}(f)=\int_{-\infty}^{\infty}x(t)e^{-j2\pi ft} \mathrm{d}t
+        \label{transformadaFourier}
+    \end{equation}
+
+    Recordando que del primer trabajo, la función correspondiente a la pendiente de la 
+    gráfica se expresa de la siguiente manera:
+
+    \begin{equation}
+        x(t)=\frac{1}{4} t + \frac{1}{8}
+        \label{funcionLineal}
+    \end{equation}
+
+    Esta función lineal se encuentra limitada por un intervalo de duración $4$ segundos, como valor
+    mínimo se tiene $-\frac{1}{2}$ y valor máximo $\frac{7}{2}$, lo que hace que esta 
+    función se vea como un "diente de sierra", por tanto su función más representativa o
+    su intervalo descriptivo es el siguiente:
+    
+    \begin{equation}
+        \begin{split}
+            x(t)&=\left(\frac{1}{4} t + \frac{1}{8}\right)rect\left(\frac{t}{4} + \frac{3}{8}\right) \\
+                &=  \left\lbrace  \begin{array}{ll}
+                                    \frac{1}{4} t + \frac{1}{8}; & -\frac{1}{2} \leq t \leq \frac{7}{2} \\
+                                    0; & p.o.c.
+                                \end{array}
+                    \right.      
+        \end{split}
+        \label{dienteSierra}
+    \end{equation}
+
+    El proceso para obtener la Transformada de Fourier de la ecuación \ref{dienteSierra} 
+    se realiza a continuación, donde el valor $x(t)$ de la ecuación \ref{transformadaFourier} será la 
+    ecuación \ref{funcionLineal}, y el valor de los intervalos de la integral serán los que 
+    limitan la función lineal, como se menciono anteriormente: \cite{silviaRB}
+
+    \begin{equation*}
+        \begin{split}
+            \tilde{x}(f)& = \int_{\frac{3}{2} -2}^{\frac{3}{2} +2}\left(\frac{1}{4} t+\frac{1}{8} \right) e^{-j2\pi ft}\mathrm{d}t \\
+                        & = \frac{1}{4} \int_{\frac{3}{2}-2}^{\frac{3}{2}+2}t e^{-j2\pi ft}\mathrm{d}t + \frac{1}{8} \int_{\frac{3}{2} -2}^{\frac{2}{3} +2} e^{-j2\pi ft}\mathrm{d}t \\
+                        & = e^{-j2\pi ft}\left(\frac{jt}{8\pi f}  + \frac{1}{16\pi ^{2} f^2}  + \frac{j}{16\pi f} \right)  \Big|_{\frac{3}{2} -2}^{\frac{3}{2} +2} \\
+                        & = \frac{je^{-j3\pi ft } e^{-j4\pi ft}}{8\pi f} \left[\frac{1}{j2\pi f} + 4 
+                          - e^{j8\pi ft} \left(\frac{1}{j2\pi f} \right)\right] \\
+                        & = \left[\left(\frac{1}{16\pi^2 f^2}+\frac{j}{2\pi f}\right)e^{-j4\pi f}-\frac{e^{j4\pi f}}{16\pi^2 f^2}\right] e^{-j3\pi f} \\
+        \end{split}
+    \end{equation*}  
+  
+
+    \begin{equation}
+        \tcboxmath[colback=gray!25!white,colframe=black, title=Transformada de Fourier]{
+            \tilde{x}(f) = \frac{e^{-j7pi f }(1 - e^{j8\pi f} + j8\pi f)}{16\pi^2 f^2}
+        }
+    \end{equation}
+
 \printbibliography[title={Bibliografía}]
 
 \end{document}

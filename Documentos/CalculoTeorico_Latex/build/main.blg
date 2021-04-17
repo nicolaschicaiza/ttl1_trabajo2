@@ -1,0 +1,14 @@
+[1] Config.pm:311> INFO - This is Biber 2.16
+[2] Config.pm:314> INFO - Logfile is 'build\main.blg'
+[1087] biber-MSWIN64:340> INFO - === 
+[1345] Biber.pm:415> INFO - Reading 'build\main.bcf'
+[2401] Biber.pm:952> INFO - Found 2 citekeys in bib section 0
+[2533] Biber.pm:4340> INFO - Processing section 0
+[2624] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
+[2780] bibtex.pm:1689> INFO - LaTeX decoding ...
+[2803] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliografia.bib'
+[3055] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[3055] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[3056] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[3064] bbl.pm:654> INFO - Writing 'build\main.bbl' with encoding 'UTF-8'
+[3071] bbl.pm:757> INFO - Output to build\main.bbl
