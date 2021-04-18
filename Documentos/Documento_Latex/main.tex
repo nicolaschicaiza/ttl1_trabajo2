@@ -1,7 +1,7 @@
 %Preamble
-\documentclass[11pt,a4paper,twocolumn]{article}
-\brokenpenalty=10000 
-%\hyphenpenalty=10000 
+\documentclass[11pt,letterpaper,twocolumn]{article}
+%\brokenpenalty=10000 
+%\hyphenpenalty=5000 
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{times}
@@ -22,6 +22,7 @@
 \usepackage{parskip}
 \usepackage{amssymb, amsmath} % Paquetes matemáticos de la American Mathematical Society
 \usepackage{float}
+\usepackage{parskip}
 \usepackage{multirow}
 \usepackage[all]{xy}
 \usepackage{tikz}
@@ -31,7 +32,7 @@
 %\usepackage{showframe}
 
 \geometry{
-    papersize = {216mm, 279mm},
+    papersize = {216mm, 279.4mm},
     width = 20cm,
     height = 25cm,
     headsep = 5mm,
@@ -63,13 +64,15 @@
 	linkcolor=black,        % color of internal links
 	citecolor=black,        % color of links to bibliography
 	filecolor=magenta,     % color of file links
-	urlcolor=blue         
+	urlcolor=black         
 }
 \spanishdecimal{.}
 
 \tcbuselibrary{theorems}
 %++++++++++++++++++++++++++++++++++++++++
 %Content
+
+\raggedbottom
 
 \addto\captionsspanish{
     \renewcommand\appendixname{Anexo}
@@ -81,25 +84,38 @@
 \renewcommand{\baselinestretch}{0.8} % Para indicar el tamaño del entrelineado
 
 \usepackage[small,compact]{titlesec}
-\titleformat{\subsubsection}[runin]
-            {\normalfont\it}
-            {\thesubsubsection}{0.5em}{}[:]
+\titleformat{\subsection}[wrap]
+    {\large\normalfont\fontseries{b}\selectfont\filright}
+    {\thesubsection.}{.5em}{}
+\titlespacing{\subsection}
+    {12pc}{1.5ex plus .1ex minus .2ex}{1pc}
+            
+\titleformat{\section}[wrap]
+    {\large\normalfont\fontseries{b}\selectfont\filright}
+    {\thesection.}{.5em}{}
+\titlespacing{\section}
+    {12pc}{1.5ex plus .1ex minus .2ex}{1pc}
+
+\setlength{\parskip}{1.5mm} % Modificar espacio entre párrafos
 
 \renewcommand*{\Authsep}{ y }
 \renewcommand*{\Authand}{ y }
 \renewcommand*{\Authands}{, }
 \renewcommand*{\Affilfont}{\normalsize}
 %\renewcommand*{\Authfont}{\bfseries}    % make author names boldface    
-\setlength{\affilsep}{0.5em}   % set the space between author and affiliation
+\setlength{\affilsep}{0.2mm}   % set the space between author and affiliation
+
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont} % Cambiar tamaño de letra autores
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape} % Cambiar tamaño de letra afiliaciones de autores
 
 \title{
     \fontsize{26}{26}\selectfont 
     \textbf{Transformada de Fourier}}
-
+    
 \author[1]{Jefry Nicolás Chicaiza}
 \author[2]{Jose Nicolás Zambrano}
-\affil[1]{jefryn@unicauca.edu.co}
-\affil[2]{jnzambranob@unicauca.edu.co}
+\affil[1]{\url{jefryn@unicauca.edu.co}}
+\affil[2]{\url{jnzambranob@unicauca.edu.co}}
 \date{}
 
 \bibliography{bibliografia}
@@ -107,7 +123,7 @@
 \begin{document}
 \maketitle
 \thispagestyle{fancy}
-\section{Introducción}
+\section{Introducción}\label{intro}
     En el siguiente documento se desarrollará el informe del Trabajo 2 de la asignatura 
     Teoría de las telecomunicaciones 1. El trabajo presenta inicialmente el desarrollo 
     analítico de la Transformada de Fourier a la señal planteada, la cual es del tipo 
@@ -123,6 +139,16 @@
     algoritmo computacional usado en el procesamiento de señales digitales para reducir en gran 
     medida el número de cálculos en el uso de la Transformada Discreta de Fourier (DFT) y su 
     inversa, hace de la DFT un procesamiento viable e indispensable \cite{Poularikas2007}.
+    
+    Cabe destacar que la finalidad principal de este documento será realizar una comprobación de 
+    ¿Cómo se ve afectado el porcentaje de la densidad espectral de energía en un intervalo de 
+    frecuencia al modificar ciertos parámetros de la señal?.
+    
+    Finalmente, el documento cuenta 
+    con una sección para la validación de los diferentes procesos empleados y el planteamiento 
+    de un plan de pruebas para analizar los efectos que presentan algunas propiedades 
+    consideradas para la investigación de este documento, además de una sección de análisis de 
+    resultados y discusión, y seguido de la sección de conclusiones.
 
        
 \section{Metodología}
@@ -134,10 +160,10 @@
     Para realizar el proceso del cálculo de la transformada de la señal es importante mencionar
     de donde surge el término de la Transformada de Fourier, surge a partir del estudio de señales
     periódicas que son representadas por las Series de Fourier, sin embargo, el estudio de las 
-    señales se interrumpe por las señales aperiódicas por no cumplir con la condición de periodicidad \cite{Sauchelli2020}.
-    Por tanto, se plantea que las señales no periódicas se pueden ver como señales de periodos 
-    largos (que tienda al infinito), de esta forma la separación de sus componentes espectrales es
-    despreciable y el espectro de estas señales es continuo \cite{Silva2021}.
+    señales se interrumpe por las señales aperiódicas por no cumplir con la condición de periodicidad
+    \cite{Sauchelli2020}. Por tanto, se plantea que las señales no periódicas se pueden ver como 
+    señales de periodos largos (que tienda al infinito), de esta forma la separación de sus 
+    componentes espectrales es despreciable y el espectro de estas señales es continuo \cite{Silva2021}.
     
     Dado que la señal es no periódica, hablar de potencia promedio no seria adecuado debido a que 
     la magnitud tiende a cero cuando el tiempo tiende a infinito, en este caso la señal tiene una
@@ -147,7 +173,7 @@
     de este documento su valor de energía es:
     
     \begin{equation*}
-       \epsilon_x=\int_{-\frac{1}{2}}^{\frac{7}{2}}\left|\frac{1}{4}t + \frac{1}{8}\right|^2 \mathrm{d}t = \frac{4}{3}
+        \epsilon_x=\int_{-\frac{1}{2}}^{\frac{7}{2}}\left|\frac{1}{4}t + \frac{1}{8}\right|^2 \mathrm{d}t = \frac{4}{3}
     \end{equation*}
 
     Después de comprobar que la señal tiene una energía definida y es posible denominarla como no
@@ -158,7 +184,7 @@
     \begin{figure}[H]
         \centering
         \selectlanguage{english}
-        \begin{tikzpicture}
+        \begin{tikzpicture}[thick,scale=0.6, every node/.style={scale=0.6}]
 	        \draw[dashed, gray!20](-1,0) grid (4,3.5);
 		    \draw[line width = 0.5mm, ->](-1.5,0)--(4.5, 0) node[right]{$t$};
 		    \draw[line width = 0.5mm, ->](0,-0.5)--(0,4) node[above]{$x(t)$};
@@ -171,7 +197,7 @@
 		    \draw (1mm, \y)--(-1mm, \y) node [left]{$1$};
         \end{tikzpicture}
         \selectlanguage{spanish}
-        \caption{Gráfica de la señal tipo "diente de sierra" no periódica.}
+        \caption{Gráfica de la señal asignada.}
         \label{funcionAsiganda}
     \end{figure}
 
@@ -181,11 +207,75 @@
     
     \begin{equation}
         \tilde{x}(f) = \frac{e^{-j7pi f }(1 - e^{j8\pi f} + j8\pi f)}{16\pi^2 f^2}
+        \label{resultadoFT}
     \end{equation} 
 
+    Para la comprobación del resultado de la ecuación \ref{resultadoFT} se desarrollo un algoritmo 
+    capas de calcular la integral característica de la Transformada de Fourier de tal manera que 
+    el resultado obtenido sea fácil de comparar. En la siguiente figura se visualiza el resultado 
+    que retorna el programa de simulación al ejecutar la integral.
     
+    \begin{figure}[H]
+        \centering 
+        \centering
+        \includegraphics[width=0.5\linewidth]{img/ResultadoEcuacionMATLAB.png}
+        \caption{Resultado de la simulación de la Transformada de Fourier de la señal.}
+        \label{resultadoEcuacionMATLAB}
+    \end{figure} 
+    
+    Además de comprobar el resultado numérico de los cálculos, se implementó en el algoritmo un
+    ciclo capaz de evaluar el resultado de la figura \ref{resultadoEcuacionMATLAB} para poder 
+    ilustrar el espectro de la frecuencia de la transformada de la señal planteada.
+     
+    \begin{figure}[H]
+        \centering 
+        \begin{subfigure}[h]{0.49\linewidth}
+            \includegraphics[width=\linewidth]{img/EMagnitudTF_ESimbolica.png}
+            \caption{}
+            \label{magnitudTeorica}
+        \end{subfigure}
+        \begin{subfigure}[h]{0.49\linewidth}
+            \includegraphics[width=\linewidth]{img/EMagnitudTF_ESimbolica.png}
+            \caption{}
+            \label{faseTorica}
+        \end{subfigure}
+        \caption{Gráficas del espectro de frecuencia de los cálculos simulados. (a) Gráfica 
+                espectro de magnitud, (b) Gráfica espectro de fase.}
+        \label{espectroTeorico}
+    \end{figure} 
 
+    A partir de estas graficas obtenidas en la simulación, se realizaron comprobaciones con 
+    ayuda del algoritmo de la Transformada Rápida de Fourier (mencionada en la introducción). 
+    El proceso de comprobación de las gráficas inicialmente requirió de una buena implementación
+    del algoritmo FFT para realizar una validez al aplicar la propiedad de dualidad que
+    manifiesta que $V(t)\rightarrow v(-f)$, donde la transformada en el dominio del tiempo su transformada
+    será la señal original en el dominio de la frecuencia (en la simulación se realizaron las
+    comprobaciones),  por lo que se valida que la señal en el tiempo es discreta y en la 
+    frecuencia es de tipo periódico como nos plantea la teoría de la Transformada de Fourier,
+    las gráficas obtenidas por el cálculo de la FFT son:
+    
+    \begin{figure}[H]
+        \centering 
+        \begin{subfigure}[h]{0.49\linewidth}
+            \includegraphics[width=\linewidth]{img/EMagnitudTF_FFT.png}
+            \label{magnitudFFT}
+            \caption{}
+        \end{subfigure}
+        \begin{subfigure}[h]{0.49\linewidth}
+            \includegraphics[width=\linewidth]{img/EFaseTF_FFT.png}
+            \label{faseFFT}
+            \caption{}
+        \end{subfigure}
+        \caption{Gráficas del espectro de frecuencia de FFT. (a) Gráfica 
+                espectro de magnitud, (b) Gráfica espectro de fase.}
+        \label{espectroFFT}
+    \end{figure} 
+    
+    
+    
     \subsection{Plan de pruebas}
+        Este es un texto de prueba de espacio para subsections, en este caso 
+        el Plan de pruebas
 
 \section{Análisis de Resultados}
 \section{Conclusiones}
@@ -193,7 +283,7 @@
 \appendix
 \section{Cálculo teórico}
 
-Realización de los cálculos matemáticos de la Transformada de Fourier de la señal 
+    Realización de los cálculos matemáticos de la Transformada de Fourier de la señal 
     asignada, la formula empleada para el cálculo de la transformada es la siguiente:
 
     \begin{equation}
@@ -229,7 +319,7 @@ Realización de los cálculos matemáticos de la Transformada de Fourier de la s
     El proceso para obtener la Transformada de Fourier de la ecuación \ref{dienteSierra} 
     se realiza a continuación, donde el valor $x(t)$ de la ecuación \ref{transformadaFourier} será la 
     ecuación \ref{funcionLineal}, y el valor de los intervalos de la integral serán los que 
-    limitan la función lineal, como se menciono anteriormente: \cite{silviaRB}
+    limitan la función lineal, como se menciono anteriormente \cite{silviaRB}: 
 
     \begin{equation*}
         \begin{split}

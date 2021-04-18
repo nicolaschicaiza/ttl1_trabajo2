@@ -934,6 +934,7 @@ INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\multirow\multirow.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\multirow\multirow.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\multirow\multirow.sty
@@ -1271,11 +1272,24 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrro8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT Escudo.jpg
@@ -1299,16 +1313,53 @@ INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrro8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrro8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT .\img\ResultadoEcuacionMATLAB.png
+INPUT .\img\ResultadoEcuacionMATLAB.png
+INPUT img\ResultadoEcuacionMATLAB.png
+INPUT .\img\ResultadoEcuacionMATLAB.png
+INPUT .\img\ResultadoEcuacionMATLAB.png
+INPUT .\img\ResultadoEcuacionMATLAB.png
+INPUT .\img\ResultadoEcuacionMATLAB.png
+INPUT .\img\EMagnitudTF_ESimbolica.png
+INPUT .\img\EMagnitudTF_ESimbolica.png
+INPUT img\EMagnitudTF_ESimbolica.png
+INPUT .\img\EMagnitudTF_ESimbolica.png
+INPUT .\img\EMagnitudTF_ESimbolica.png
+INPUT .\img\EMagnitudTF_ESimbolica.png
+INPUT .\img\EMagnitudTF_ESimbolica.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT .\img\EMagnitudTF_ESimbolica.png
+INPUT .\img\EMagnitudTF_ESimbolica.png
+INPUT img\EMagnitudTF_ESimbolica.png
+INPUT .\img\EMagnitudTF_ESimbolica.png
+INPUT .\img\EMagnitudTF_FFT.png
+INPUT .\img\EMagnitudTF_FFT.png
+INPUT img\EMagnitudTF_FFT.png
+INPUT .\img\EMagnitudTF_FFT.png
+INPUT .\img\EMagnitudTF_FFT.png
+INPUT .\img\EMagnitudTF_FFT.png
+INPUT .\img\EMagnitudTF_FFT.png
+INPUT .\img\EFaseTF_FFT.png
+INPUT .\img\EFaseTF_FFT.png
+INPUT img\EFaseTF_FFT.png
+INPUT .\img\EFaseTF_FFT.png
+INPUT .\img\EFaseTF_FFT.png
+INPUT .\img\EFaseTF_FFT.png
+INPUT .\img\EFaseTF_FFT.png
+INPUT .\Escudo.jpg
+INPUT .\Escudo.jpg
+INPUT Escudo.jpg
+INPUT .\Escudo.jpg
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmrc8t.tfm
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1pcr.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
 INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
@@ -1344,6 +1395,8 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrro8a.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrro8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
