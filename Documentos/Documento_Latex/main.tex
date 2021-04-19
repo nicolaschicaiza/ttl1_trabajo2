@@ -45,15 +45,15 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead[LO,LE]{
-    \begin{minipage}{3cm}
-        \includegraphics[width=0.7\textwidth]{Escudo.jpg}
-    \end{minipage}
+    \includegraphics[scale=0.119]{Escudo.jpg}
 }
 \fancyhead[RO,RE]{
+    \fontsize{9}{9}
     \textsf{
         Transformada de Fourier aplicado a una función Diente de Sierra no periódica\\
         Teoría de telecomunicaciones I, Grupo A12\\
-        \date{\today}   
+        \vspace{-1.2mm}
+        \today   
     }
 }
 \fancyfoot[C]{\thepage}
@@ -144,7 +144,7 @@
     medida el número de cálculos en el uso de la Transformada Discreta de Fourier (DFT) y su 
     inversa, hace de la DFT un procesamiento viable e indispensable \cite{Poularikas2007}.
     
-    Cabe destacar que la finalidad principal de este documento será realizar una comprobación de 
+    Cabe destacar que la finalidad principal de este documento será realizar una comprobación de
     ¿Cómo se ve afectado el espectro en frecuencia al modificar ciertos parámetros de la señal?
     Para lo que se espera que la modificación de un parámetro que afecte directamente al espectro 
     de la magnitud, también afecte a su componente en fase.
@@ -217,18 +217,6 @@
     el problema, se procedió a realizar la planificación de la simulación requerida para verificar y analizar
     los escenarios planteados por el problema. 
     
-    %Después de haber realizado estas validaciones para tener claridad acerca de lo que se 
-    %observa en las gráficas, se dio inicio a la investigación que se plantea en este documento
-    %con el análisis de algunos escenarios que se idearon en la simulación. las propiedades de 
-    %la Transformada de Fourier que se usaron para el análisis fueron:
-    %
-    %\begin{itemize}
-    %    \item Multiplicación por un escalar.
-    %    \item Cambio de escala.
-    %    \item Traslación en el tiempo.
-    %    \item Traslación en frecuencia.
-    %\end{itemize}
-    
     Se puede identificar 6 objetivos clave a desarrollar con la simulación en MATLAB:
     
     \begin{enumerate}
@@ -240,10 +228,11 @@
         \item Análisis de los efectos sobre el espectro al trasladar la señal en el dominio de la frecuencia.
     \end{enumerate}
     
-    Después de realizar el análisis de los requerimientos anteriores, se plantea un \underline{esquema}
-    \underline{general} para el desarrollo de la simulación en la figura \ref{diagramaGeneral}.
+    Después de realizar el análisis de los requerimientos anteriores, en la figura \ref{diagramaGeneral}
+    se plantea un \underline{esquema} \underline{general} para el desarrollo de la simulación..
     
-    \begin{figure}[h]
+    \begin{figure}[H]
+        \tiny
         \centerline{
             \xymatrix@ -1pc @ R = 10pt @ C = 0.4pt{
                 % primera fila
@@ -260,16 +249,10 @@
                 \\
                 % cuarta fila
                 *++[F-,]\txt{4. Graficación de señales y espectros de \\
-                            las Transformadas de Fourier} \ar[d] & &
-                \\ 
-                % quinta fila
-                *++[F-,]\txt{5. TBD.} \ar[d] & &
-                \\
-                % sexta fila
-                *++[F-,]\txt{6. TBD.}
+                            las Transformadas de Fourier}
             } 
         }
-        \caption{Diagrama para el desarrollo de los escenarios.}
+        \caption{Diagrama para el desarrollo de la simulación.}
         \label{diagramaGeneral}
     \end{figure}
     
@@ -282,9 +265,11 @@
 
     \subsection{Plan de pruebas}
 
-    Retomando los 4 objetivos clave a desarrollar con la simulación, se plantea el siguiente plan de pruebas a realizar:
+    Retomando los 6 objetivos clave a desarrollar con la simulación, se plantea el siguiente plan de pruebas
+    para los escenarios a realizar:
     
      \begin{figure}[H]
+        \tiny
         \centerline{
             \xymatrix@ -1pc @ R = 10pt @ C = 0.4pt{
                 % primera fila
@@ -306,79 +291,216 @@
                             espectro de magnitud.}
             }
         }
-        \caption{Diagrama para el desarrollo de los escenarios.}
+        \caption{Diagrama para el plan de pruebas.}
         \label{diagramaEscenarios}
     \end{figure}
 
-    \section{Análisis de Resultados}
- 
-    Para la comprobación del resultado de la ecuación \ref{resultadoFT} se desarrollo un algoritmo 
-    capas de calcular la integral característica de la Transformada de Fourier de tal manera que 
-    el resultado obtenido sea fácil de comparar. En la siguiente figura se visualiza el resultado 
-    que retorna el programa de simulación al ejecutar la integral.
+\section{Análisis de resultados}
+    Para alcanzar los resultados se realizó un único Script, que en primer lugar es capaz de obtener el valor
+    de la Transforma de Fourier a partir de la solución de la integral característica del teorema, de tal
+    manera que el resultado obtenido sea fácil de comparar. Además en el algoritmo se implemento un ciclo 
+    que es ideal para evaluar el resultado de la integral en un determinado intervalo de frecuencia, con el
+    fin de representar las graficas del espectro en frecuencia.
     
-    \begin{figure}[H]
-        \centering 
-        \centering
-        \includegraphics[width=0.5\linewidth]{img/ResultadoEcuacionMATLAB.png}
-        \caption{Resultado de la simulación de la Transformada de Fourier de la señal.}
-        \label{resultadoEcuacionMATLAB}
-    \end{figure} 
-    
-    Además de comprobar el resultado numérico de los cálculos, se implementó en el algoritmo un
-    ciclo capaz de evaluar el resultado de la figura \ref{resultadoEcuacionMATLAB} para poder 
-    ilustrar el espectro de la frecuencia de la transformada de la señal planteada.
-     
-    \begin{figure}[h]
-        \centering 
-        \begin{subfigure}[h]{0.49\linewidth}
-            \includegraphics[width=\linewidth]{img/EMagnitudTF_ESimbolica.png}
-            \caption{}
-            \label{magnitudTeorica}
-        \end{subfigure}
-        \begin{subfigure}[h]{0.49\linewidth}
-            \includegraphics[width=\linewidth]{img/EFaseTF_ESimbolica.png}
-            \caption{}
-            \label{faseTorica}
-        \end{subfigure}
-        \caption{Gráficas del espectro de frecuencia de los cálculos simulados. (a) Gráfica 
-                espectro de magnitud, (b) Gráfica espectro de fase.}
-        \label{espectroTeorico}
-    \end{figure} 
-
-    A partir de las figuras \ref{magnitudTeorica} y \ref{faseTorica} obtenidas en la simulación, se 
-    realizaron comprobaciones con ayuda del algoritmo de la Transformada Rápida de Fourier (mencionada
-    en la sección \ref{intro}).
-    
-    El proceso de comprobación de las gráficas inicialmente requirió de una buena
+    En segundo lugar, la implementación del algoritmo de la Transformada Rápida de Fourier (mencionada
+    en la sección \ref{intro}) permitió validar que las graficas obtenidos con la simulación de los 
+    cálculos son correctas. El proceso de comprobación de las gráficas inicialmente requirió de una buena
     implementación del algoritmo FFT para realizar una validez al aplicar la propiedad de dualidad que
-    manifiesta que $V(t)\rightarrow v(-f)$, donde la transformada en el dominio del tiempo su transformada
+    manifiesta que: $V(t)\rightarrow v(-f)$, donde la transformada en el dominio del tiempo su transformada
     será la señal original en el dominio de la frecuencia (en la simulación se realizaron las
     comprobaciones),  por lo que se valida que la señal en el tiempo es discreta y en la 
-    frecuencia es de tipo periódico como nos plantea la teoría de la Transformada de Fourier,
-    las gráficas obtenidas por el cálculo de la FFT se observan en la figura \ref{espectroFFT}.
+    frecuencia es de tipo periódico como nos plantea la teoría de la Transformada de Fourier.
     
-    \begin{figure}[h]
-        \centering 
-        \begin{subfigure}[h]{0.49\linewidth}
-            \includegraphics[width=\linewidth]{img/EMagnitudTF_FFT.png}
-            \label{magnitudFFT}
-            \caption{}
-        \end{subfigure}
-        \begin{subfigure}[h]{0.49\linewidth}
-            \includegraphics[width=\linewidth]{img/EFaseTF_FFT.png}
-            \label{faseFFT}
-            \caption{}
-        \end{subfigure}
-        \caption{Gráficas del espectro de frecuencia de FFT. (a) Gráfica 
-                espectro de magnitud, (b) Gráfica espectro de fase.}
-        \label{espectroFFT}
-    \end{figure} 
+    Cabe destacar que el algoritmo desarrollado está pensado para generalizar los escenarios planteados 
+    en el plan de pruebas y permita alcanzar conclusiones completas del mismo.
+    
+    \subsection{Desarrollo del objetivo clave 1--Comparación de espectros: Simbólica versus FFT}
+        Antes de comparar y analizar los espectros obtenidos de los diferentes procesos en la siguiente figura 
+        se visualiza el resultado que retorna el programa de simulación al ejecutar la integral simbólica.
+        
+        \begin{figure}[H]
+            \centering 
+            \centering
+            \includegraphics[width=0.5\linewidth]{img/ResultadoEcuacionMATLAB.png}
+            \caption{Resultado de la simulación de la Transformada de Fourier de la señal.}
+            \label{resultadoEcuacionMATLAB}
+        \end{figure} 
+        
+        Realizando la comparación con la ecuación \ref{resultadoFT}, se evidencia que se trata de 
+        la misma ecuación, por lo que se puede considerar que obtener la transformada de Fourier
+        por medio de una integral simbólica es una buena alternativa. Además de comprobar el resultado
+        numérico de los cálculos, se implementó en el algoritmo un ciclo capaz de evaluar el resultado
+        de la figura \ref{resultadoEcuacionMATLAB} para poder representar las grafica del espectro de la
+        frecuencia de la transformada de la señal planteada.
+         
+        \begin{figure}[H]
+            \centering 
+            \begin{subfigure}[h]{0.49\linewidth}
+                \includegraphics[width=\linewidth]{img/EMagnitudTF_ESimbolica.png}
+                \caption{}
+                \label{magnitudTeorica}
+            \end{subfigure}
+            \begin{subfigure}[h]{0.49\linewidth}
+                \includegraphics[width=\linewidth]{img/EFaseTF_ESimbolica.png}
+                \caption{}
+                \label{faseTorica}
+            \end{subfigure}
+            \caption{Gráficas del espectro de frecuencia de los cálculos simulados. (a) Espectro 
+                    de magnitud, (b) Espectro de fase.}
+            \label{espectroTeorico}
+        \end{figure} 
+        \vspace{-5mm}
+    
+        A partir de las figuras \ref{magnitudTeorica} y \ref{faseTorica} obtenidas en la simulación, se 
+        realizaron comprobaciones con ayuda del algoritmo de la Transformada Rápida de Fourier (mencionada
+        en la sección \ref{intro}). las gráficas obtenidas por el cálculo de la FFT se observan en la figura
+        \ref{espectroFFT}.
+        
+        \begin{figure}[H]
+            \centering 
+            \begin{subfigure}[h]{0.49\linewidth}
+                \includegraphics[width=\linewidth]{img/EMagnitudTF_FFT.png}
+                \label{magnitudFFT}
+                \caption{}
+            \end{subfigure}
+            \begin{subfigure}[h]{0.49\linewidth}
+                \includegraphics[width=\linewidth]{img/EFaseTF_FFT.png}
+                \label{faseFFT}
+                \caption{}
+            \end{subfigure}
+            \caption{Gráficas del espectro de frecuencia de FFT. (a) Espectro de magnitud, (b) Espectro de 
+                    fase.}
+            \label{espectroFFT}
+        \end{figure}
+        
+        En la figuras \ref{magnitudFFT} y \ref{faseFFT} es evidente observar la similitud con las graficas en
+        la figura \ref{espectroTeorico}, por lo que el método de evaluar una función obtenida a partir de una 
+        integral simbólica, resulta ser efectiva para este tipo de actividades 
+        
+        espués de haber realizado estas validaciones para tener claridad acerca de lo que se 
+        observa en las gráficas, se dio inicio a la investigación que se plantea en este documento
+        con el análisis de algunos escenarios que se idearon en la simulación. las propiedades de 
+        la Transformada de Fourier que se usaron para el análisis fueron:
+        
+        \begin{itemize}
+            \item Multiplicación por un escalar.
+            \item Cambio de escala.
+            \item Traslación en el tiempo.
+            \item Traslación en frecuencia.
+        \end{itemize}
+        
+    \subsection{Desarrollo del objetivo clave 2--Cambio de amplitud en el dominio temporal - Linealidad}
+        La propiedad de linealidad indica que al realizarse la transformada de una función multiplicada por un escalar, se obtendrá como resultado la misma transformada pero multiplicada por el escalar de la siguiente forma: 
+        \begin{equation}
+            A{x}(t) \rightarrow A\tilde{x}(f)
+            \label{Linearidad}
+        \end{equation}
+        
+        Para la verificación de esta propiedad se evaluaron dos escenarios, uno en el cual se realiza la transformada simbólica y la FFT sin ningún tipo de modificación a la señal original y otro escenario donde se multiplica la señal original por un escalar arbitrario:
+        
+        \begin{figure}[H]
+            \centering 
+            \includegraphics[width=0.5\linewidth]{img/Proplinearidad.png}
+            \caption{Gráficas del espectro: (negro)  
+                     Espectro de magnitud con amplitud 5, (azul) Espectro de magnitud original.}
+             \label{P1}
+        \end{figure}
+        \vspace{-5mm}    
+            
+        Por inspección se confirma que la propiedad es aplicada correctamente al modificar los parámetros de la simulación para un escalar A=5. Por confirmación, se evalúa la transformada simbólica en dos puntos específicos de frecuencia 0 Hz y 1 Hz para obtener confirmación numérica de la aplicación de la propiedad y se obtienen los resultados esperados para la ecuación \ref{Linearidad}.
+        
+    \subsection{Desarrollo del objetivo clave 3--Cambio de escala}
+        La propiedad de cambio de escala indica que al realizarse la transformada de una función con un cambio de proporción en su variable independiente, se obtendrá una transformada con relación inversamente proporcional a ese cambio de la siguiente forma: 
+        
+        \begin{equation}
+            x(at)\rightarrow \frac{1}{\left | a \right |} \tilde X(\frac{f}{a})
+            \label{Escala}
+        \end{equation}
+         
+        Para la verificación de esta propiedad se evaluaron dos escenarios; uno en el cual se realiza la transformada simbólica y la FFT sin ningún tipo de modificación a la señal original y otro escenario donde se cambia la escala así:
+        
+            \begin{figure}[H]
+                \centering 
+                    \includegraphics[width=0.5\linewidth]{img/Propescala.png}
+                \caption{Gráficas del espectro: (rojo) Gráfica 
+                        espectro de magnitud con escala esc=4, (azul) Gráfica espectro de magnitud original.}
+                \label{P1}
+            \end{figure}
+            
+        Se puede apreciar que al multiplicar la variable independiente "t" por un escalar esc=4, el espectro de magnitud tiene un comportamiento descrito por la notación (3). Este comportamiento tiene un efecto similar al que se encontró en el taller anterior cuando se modificó en periodo de la señal. Desde un punto de vista aritmético, cambiar la escala de una función periódica, equivale a cambiar escalarmente el periodo de su frecuencia fundamental.
+        
+    \subsection{Desarrollo del objetivo clave 4--Translación en el dominio temporal}
+        La propiedad de translación en el tiempo indica que al realizarse la transformada de una función que tiene un desplazamiento temporal, se obtendrá como resultado la transformada de la función original pero multiplicada por un exponencial complejo de la siguiente forma: 
+        
+        \begin{equation}
+            {x}(t-to) \rightarrow \tilde{X}(f) e^{-j2 \pi fto}
+            \label{TTiempo}
+        \end{equation}
+        
+        Para la evaluación de este escenario se hace necesario tener en cuenta la información entregada por el espectro de fase, ya que en la notación (4) es notorio que el resultado de aplicar un desplazamiento temporal únicamente va a tener efectos en la parte imaginaria de la transformada de Fourier debido a la forma del exponencial complejo que acompaña al par transformado.
+        
+        \begin{figure}[H]
+                \centering 
+                \begin{subfigure}[h]{0.49\linewidth}
+                    \includegraphics[width=\linewidth]{img/Proptiempomagnitud.png}
+                    \label{P3}
+                    \caption{}
+                \end{subfigure}
+                \begin{subfigure}[h]{0.49\linewidth}
+                    \includegraphics[width=\linewidth]{img/Proptiempofase.png}
+                    \label{P33}
+                    \caption{}
+                \end{subfigure}
+                \caption{(a) Superposición de espectros de magnitud, (b) Superposición de espectros de fase (verde) Fase sin aplicar desplazamiento - (negro) Fase al aplicar desplazamiento sh=2.}
+                \label{P33}
+            \end{figure}
+        
+        Al inspeccionar las gráficas obtenidas, se confirma que en el caso de translación temporal, el espectro de magnitud no sufre ninguna modificación; Sin embargo, el espectro de fase si cambia debido a que el movimiento de la señal en el dominio del tiempo refleja su información en la fase de la transformada.
+        
+    \subsection{Desarrollo del objetivo clave 5--Translación en el dominio de la frecuencia}
+        La propiedad de translación en frecuencia indica que al realizarse la transformada de una función en el tiempo la cual esta multiplicada por un exponencial complejo tal que cause un cambio en la frecuencia, se obtendrá como resultado la misma transformada pero desplazada en el dominio de la frecuencia de la siguiente forma: 
+        
+        \begin{equation}
+            {x}(t)e^{j2 \pi fot} \rightarrow \tilde{X}(f-fo)
+            \label{TFrecuencia}
+        \end{equation}
+        
+        Al realizar los cambios en la simulación, se obtuvieron los siguientes resultados:
+        
+        \begin{figure}[H]
+                \centering 
+                \begin{subfigure}[h]{0.49\linewidth}
+                    \includegraphics[width=\linewidth]{img/Propfrecmagnitud.png}
+                    \label{P4}
+                    \caption{}
+                \end{subfigure}
+                \begin{subfigure}[h]{0.49\linewidth}
+                    \includegraphics[width=\linewidth]{img/Propfrecfase.png}
+                    \label{P44}
+                    \caption{}
+                \end{subfigure}
+                \caption{(a) Superposición de espectros de magnitud, (b) Superposición de espectros de fase (verde) Fase sin aplicar desplazamiento - (negro) Fase al aplicar desplazamiento sh=2.}
+                \label{P44}
+            \end{figure}
+            
+\section{Conclusiones}
+    En el dominio del tiempo cuando se tiene una señal de tiempo discreto o de periodo infinito,
+    su magnitud en frecuencia tiende a ser cero en el infinito, por tanto sus valores de 
+    intensidad decaen generando que su potencia promedio tienda a cero. Por ello se concluye 
+    que al tratarse con señales de periodo infinito se define la energía total que existe en vez 
+    de la potencia.
+    
+    Debido a una relación biunívoca que existe entre una función en el dominio del tiempo con su 
+    dominio de frecuencia pueden formar únicamente un par transformado. por esta razón una señal 
+    no puede tener dos o más transformadas de Fourier.
+    
+    La propiedad de cambio de escala muestra un efecto de compresión cuando su parámetro es 
+    mayor a la unidad y de expansión cuando es menor a la unidad, así mismo su valor cuando es 
+    negativo se produce su invertida, lo cual produce una modificación en el periodo. Por tanto
+    los efectos de esta propiedad causara una modificación recíproca en la magnitud de la 
+    frecuencia.
     
     
-    
-    \section{Conclusiones}
-
 %\appendix
 %\section{Cálculo teórico}
 
