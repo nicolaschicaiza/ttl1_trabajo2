@@ -106,7 +106,6 @@
       \strng{authorbibnamehash}{e6376a6ae7d74c74a868da0a5b4004a1}
       \strng{authornamehash}{e6376a6ae7d74c74a868da0a5b4004a1}
       \strng{authorfullhash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -156,35 +155,6 @@
       \endverb
       \verb{url}
       \verb http://artemisa.unicauca.edu.co/%7B~%7Dvflorez/TTL1/Documento%20Clase%20-%20Teoria%20de%20Telecomunicacion%20I%20VM.pdf
-      \endverb
-    \endentry
-    \entry{silviaRB}{article}{}
-      \name{author}{1}{}{%
-        {{hash=e6376a6ae7d74c74a868da0a5b4004a1}{%
-           family={Silva},
-           familyi={S\bibinitperiod},
-           given={Maria},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Popayán}%
-      }
-      \strng{namehash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \strng{fullhash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \strng{bibnamehash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \strng{authorbibnamehash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \strng{authornamehash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \strng{authorfullhash}{e6376a6ae7d74c74a868da0a5b4004a1}
-      \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Notas de clase}
-      \field{title}{{Ejercicio Transformada de Fourier}}
-      \field{year}{2021}
-      \verb{file}
-      \verb :G$\backslash$:/Mi unidad/Ingenieria electonica y telecomunicaciones/Teor{\'{i}}a de Telecomunicaciones I (Comunicaciones Anal{\'{o}}gicas)/2021.1/2. An{\'{a}}lisis de Fourier/14. Ejemplo aplicaci{\'{o}}n de las propiedades FT/RB 2021-03-10 18.20.41.pdf:pdf
       \endverb
     \endentry
   \enddatalist

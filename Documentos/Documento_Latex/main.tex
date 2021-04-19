@@ -22,6 +22,7 @@
 \usepackage{parskip}
 \usepackage{amssymb, amsmath} % Paquetes matemáticos de la American Mathematical Society
 \usepackage{float}
+\usepackage{setspace}
 \usepackage{parskip}
 \usepackage{multirow}
 \usepackage[all]{xy}
@@ -103,25 +104,28 @@
 \renewcommand*{\Authands}{, }
 \renewcommand*{\Affilfont}{\normalsize}
 %\renewcommand*{\Authfont}{\bfseries}    % make author names boldface    
-\setlength{\affilsep}{0.2mm}   % set the space between author and affiliation
+\setlength{\affilsep}{-2mm}   % set the space between author and affiliation
 
-\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont} % Cambiar tamaño de letra autores
-\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape} % Cambiar tamaño de letra afiliaciones de autores
+\renewcommand\Authfont{\fontsize{12}{12}\selectfont} % Cambiar tamaño de letra autores
+\renewcommand\Affilfont{\fontsize{9}{9}\itshape} % Cambiar tamaño de letra afiliaciones de autores
 
 \title{
     \fontsize{26}{26}\selectfont 
-    \textbf{Transformada de Fourier}}
-    
+    \textbf{Transformada de Fourier
+    \vspace{-5mm}}}
 \author[1]{Jefry Nicolás Chicaiza}
 \author[2]{Jose Nicolás Zambrano}
-\affil[1]{\url{jefryn@unicauca.edu.co}}
-\affil[2]{\url{jnzambranob@unicauca.edu.co}}
+\affil[1]{\url{jefryn@unicauca.edu.co}
+    \vspace{-2mm}}
+\affil[2]{\url{jnzambranob@unicauca.edu.co}
+    \vspace{-5mm}}
 \date{}
 
 \bibliography{bibliografia}
 
 \begin{document}
 \maketitle
+\vspace{-5mm}
 \thispagestyle{fancy}
 \section{Introducción}\label{intro}
     En el siguiente documento se desarrollará el informe del Trabajo 2 de la asignatura 
@@ -141,15 +145,14 @@
     inversa, hace de la DFT un procesamiento viable e indispensable \cite{Poularikas2007}.
     
     Cabe destacar que la finalidad principal de este documento será realizar una comprobación de 
-    ¿Cómo se ve afectado el porcentaje de la densidad espectral de energía en un intervalo de 
-    frecuencia al modificar ciertos parámetros de la señal?.
+    ¿Cómo se ve afectado el espectro en frecuencia al modificar ciertos parámetros de la señal?
+    Para lo que se espera que la modificación de un parámetro que afecte directamente al espectro 
+    de la magnitud, también afecte a su componente en fase.
     
-    Finalmente, el documento cuenta 
-    con una sección para la validación de los diferentes procesos empleados y el planteamiento 
-    de un plan de pruebas para analizar los efectos que presentan algunas propiedades 
-    consideradas para la investigación de este documento, además de una sección de análisis de 
-    resultados y discusión, y seguido de la sección de conclusiones.
-
+    Finalmente, el documento cuenta con una sección para la validación de los diferentes procesos
+    empleados y el planteamiento de un plan de pruebas para analizar los efectos que presentan
+    algunas propiedades consideradas para la investigación de este documento, además de una sección
+    de análisis de resultados y discusión, y seguido de la sección de conclusiones.
        
 \section{Metodología}
     La metodología que se empleo para el desarrollo de la Transformada de Fourier a la señal planteada 
@@ -157,7 +160,7 @@
     se realizó el cálculo analíticamente para considerar un resultado a partir de dicha teoría y
     poder comprobar el resultado en una simulación computacional. 
     
-    Para realizar el proceso del cálculo de la transformada de la señal es importante mencionar
+    Para realizar el proceso del cálculo de la transformada de la señal, es importante mencionar
     de donde surge el término de la Transformada de Fourier, surge a partir del estudio de señales
     periódicas que son representadas por las Series de Fourier, sin embargo, el estudio de las 
     señales se interrumpe por las señales aperiódicas por no cumplir con la condición de periodicidad
@@ -178,13 +181,13 @@
 
     Después de comprobar que la señal tiene una energía definida y es posible denominarla como no
     periódica, se procedió a calcular la transformada de la señal resolviendo la integral 
-    característica del teorema, antes de esto se considera la función que representa la gráfica
-    de esta señal de interés:
+    característica del teorema, antes de esto se considera la función que representa la grafica 
+    de la señal de interés observada en la figura \ref{funcionAsiganda}.
 
-    \begin{figure}[H]
+    \begin{figure}[h!]
         \centering
         \selectlanguage{english}
-        \begin{tikzpicture}[thick,scale=0.6, every node/.style={scale=0.6}]
+        \begin{tikzpicture}[thick,scale=0.8, every node/.style={scale=0.8}]
 	        \draw[dashed, gray!20](-1,0) grid (4,3.5);
 		    \draw[line width = 0.5mm, ->](-1.5,0)--(4.5, 0) node[right]{$t$};
 		    \draw[line width = 0.5mm, ->](0,-0.5)--(0,4) node[above]{$x(t)$};
@@ -202,14 +205,113 @@
     \end{figure}
 
     El resultado que se obtuvo de la transformada de esta señal con los intervalos observados en la
-    figura \ref{funcionAsiganda} se aprecia a continuación (el paso a paso de el cálculo que se 
-    realizó para esta transformada se puede encontrar en la sección de anexos de este documento):
+    figura \ref{funcionAsiganda} se aprecia en la ecuación \ref{resultadoFT} (el paso a paso del cálculo que se 
+    realizó para esta transformada se puede encontrar anexo junto a este documento).
     
     \begin{equation}
         \tilde{x}(f) = \frac{e^{-j7pi f }(1 - e^{j8\pi f} + j8\pi f)}{16\pi^2 f^2}
         \label{resultadoFT}
     \end{equation} 
+   
+    Después de haber realizado el planteamiento de los fundamentos matemáticos requeridos para solucionar
+    el problema, se procedió a realizar la planificación de la simulación requerida para verificar y analizar
+    los escenarios planteados por el problema. 
+    
+    %Después de haber realizado estas validaciones para tener claridad acerca de lo que se 
+    %observa en las gráficas, se dio inicio a la investigación que se plantea en este documento
+    %con el análisis de algunos escenarios que se idearon en la simulación. las propiedades de 
+    %la Transformada de Fourier que se usaron para el análisis fueron:
+    %
+    %\begin{itemize}
+    %    \item Multiplicación por un escalar.
+    %    \item Cambio de escala.
+    %    \item Traslación en el tiempo.
+    %    \item Traslación en frecuencia.
+    %\end{itemize}
+    
+    Se puede identificar 6 objetivos clave a desarrollar con la simulación en MATLAB:
+    
+    \begin{enumerate}
+        \item Cálculo y representación gráfica de la transformada de Fourier de la señal.
+        \item Análisis de la Transformada versus FFT. 
+        \item Análisis de los efectos sobre el espectro al multiplicar la señal por un escalar.
+        \item Análisis de los efectos sobre el espectro al cambiar de escala del dominio de la señal.
+        \item Análisis de los efectos sobre el espectro al trasladar la señal en el tiempo.
+        \item Análisis de los efectos sobre el espectro al trasladar la señal en el dominio de la frecuencia.
+    \end{enumerate}
+    
+    Después de realizar el análisis de los requerimientos anteriores, se plantea un \underline{esquema}
+    \underline{general} para el desarrollo de la simulación en la figura \ref{diagramaGeneral}.
+    
+    \begin{figure}[h]
+        \centerline{
+            \xymatrix@ -1pc @ R = 10pt @ C = 0.4pt{
+                % primera fila
+                *++[F-,]\txt{1. Declaración de variables y espacios \\
+                            vectoriales a utilizar.} \ar[d] & &
+                \\
+                % segunda fila
+                *++[F-,]\txt{2. Calculo de la transformada de Fourier \\
+                            de manera simbólica.} \ar[d] & &
+                \\
+                % tercer fila
+                *++[F-,]\txt{3. Calculo de la transformada rápida de \\
+                            Fourier.} \ar[d] & &
+                \\
+                % cuarta fila
+                *++[F-,]\txt{4. Graficación de señales y espectros de \\
+                            las Transformadas de Fourier} \ar[d] & &
+                \\ 
+                % quinta fila
+                *++[F-,]\txt{5. TBD.} \ar[d] & &
+                \\
+                % sexta fila
+                *++[F-,]\txt{6. TBD.}
+            } 
+        }
+        \caption{Diagrama para el desarrollo de los escenarios.}
+        \label{diagramaGeneral}
+    \end{figure}
+    
+    Para la realización del Script de simulación se utilizó el paradigma de programación estructurada, 
+    ya que el mismo permite agilidad en el desarrollo del código, así como también facilita el desarrollo
+    de los planteamientos matemáticos necesarios para lograr los objetivos de la simulación.Adicionalmente
+    la programación estructurada, brinda al observador del código una perspectiva secuencial en el 
+    desarrollo del algoritmo de simulación, y, por lo tanto, un orden lógico y trazable de los resultados
+    esperados en la ejecución de este.
 
+    \subsection{Plan de pruebas}
+
+    Retomando los 4 objetivos clave a desarrollar con la simulación, se plantea el siguiente plan de pruebas a realizar:
+    
+     \begin{figure}[H]
+        \centerline{
+            \xymatrix@ -1pc @ R = 10pt @ C = 0.4pt{
+                % primera fila
+                *++[F-,]\txt{1. Comparación de espectros: Simbólica vs FFT.} \ar[d] & &
+                \\
+                % segunda fila
+                *++[F-,]\txt{2. Cambio de la amplitud en dominio temporal.} \ar[d] & &
+                \\
+                % tercer fila
+                *++[F-,]\txt{3. Aumento y disminución del ancho de la \\
+                            señal original.} \ar[d] & &
+                \\
+                % cuarta fila
+                *++[F-,]\txt{4.Desplazamiento positivo en el dominio \\
+                            del tiempo.} \ar[d] & &
+                \\
+                % quinta fila
+                *++[F-,]\txt{5. Desplazamiento positivo y negativo del \\
+                            espectro de magnitud.}
+            }
+        }
+        \caption{Diagrama para el desarrollo de los escenarios.}
+        \label{diagramaEscenarios}
+    \end{figure}
+
+    \section{Análisis de Resultados}
+ 
     Para la comprobación del resultado de la ecuación \ref{resultadoFT} se desarrollo un algoritmo 
     capas de calcular la integral característica de la Transformada de Fourier de tal manera que 
     el resultado obtenido sea fácil de comparar. En la siguiente figura se visualiza el resultado 
@@ -227,7 +329,7 @@
     ciclo capaz de evaluar el resultado de la figura \ref{resultadoEcuacionMATLAB} para poder 
     ilustrar el espectro de la frecuencia de la transformada de la señal planteada.
      
-    \begin{figure}[H]
+    \begin{figure}[h]
         \centering 
         \begin{subfigure}[h]{0.49\linewidth}
             \includegraphics[width=\linewidth]{img/EMagnitudTF_ESimbolica.png}
@@ -235,7 +337,7 @@
             \label{magnitudTeorica}
         \end{subfigure}
         \begin{subfigure}[h]{0.49\linewidth}
-            \includegraphics[width=\linewidth]{img/EMagnitudTF_ESimbolica.png}
+            \includegraphics[width=\linewidth]{img/EFaseTF_ESimbolica.png}
             \caption{}
             \label{faseTorica}
         \end{subfigure}
@@ -244,17 +346,19 @@
         \label{espectroTeorico}
     \end{figure} 
 
-    A partir de estas graficas obtenidas en la simulación, se realizaron comprobaciones con 
-    ayuda del algoritmo de la Transformada Rápida de Fourier (mencionada en la introducción). 
-    El proceso de comprobación de las gráficas inicialmente requirió de una buena implementación
-    del algoritmo FFT para realizar una validez al aplicar la propiedad de dualidad que
+    A partir de las figuras \ref{magnitudTeorica} y \ref{faseTorica} obtenidas en la simulación, se 
+    realizaron comprobaciones con ayuda del algoritmo de la Transformada Rápida de Fourier (mencionada
+    en la sección \ref{intro}).
+    
+    El proceso de comprobación de las gráficas inicialmente requirió de una buena
+    implementación del algoritmo FFT para realizar una validez al aplicar la propiedad de dualidad que
     manifiesta que $V(t)\rightarrow v(-f)$, donde la transformada en el dominio del tiempo su transformada
     será la señal original en el dominio de la frecuencia (en la simulación se realizaron las
     comprobaciones),  por lo que se valida que la señal en el tiempo es discreta y en la 
     frecuencia es de tipo periódico como nos plantea la teoría de la Transformada de Fourier,
-    las gráficas obtenidas por el cálculo de la FFT son:
+    las gráficas obtenidas por el cálculo de la FFT se observan en la figura \ref{espectroFFT}.
     
-    \begin{figure}[H]
+    \begin{figure}[h]
         \centering 
         \begin{subfigure}[h]{0.49\linewidth}
             \includegraphics[width=\linewidth]{img/EMagnitudTF_FFT.png}
@@ -273,71 +377,66 @@
     
     
     
-    \subsection{Plan de pruebas}
-        Este es un texto de prueba de espacio para subsections, en este caso 
-        el Plan de pruebas
+    \section{Conclusiones}
 
-\section{Análisis de Resultados}
-\section{Conclusiones}
+%\appendix
+%\section{Cálculo teórico}
 
-\appendix
-\section{Cálculo teórico}
+    %Realización de los cálculos matemáticos de la Transformada de Fourier de la señal 
+    %asignada, la formula empleada para el cálculo de la transformada es la siguiente:
 
-    Realización de los cálculos matemáticos de la Transformada de Fourier de la señal 
-    asignada, la formula empleada para el cálculo de la transformada es la siguiente:
+    %\begin{equation}
+        %\tilde{x}(f)=\int_{-\infty}^{\infty}x(t)e^{-j2\pi ft} \mathrm{d}t
+        %\label{transformadaFourier}
+    %\end{equation}
 
-    \begin{equation}
-        \tilde{x}(f)=\int_{-\infty}^{\infty}x(t)e^{-j2\pi ft} \mathrm{d}t
-        \label{transformadaFourier}
-    \end{equation}
+    %Recordando que del primer trabajo, la función correspondiente a la pendiente de la 
+    %gráfica se expresa de la siguiente manera:
 
-    Recordando que del primer trabajo, la función correspondiente a la pendiente de la 
-    gráfica se expresa de la siguiente manera:
+    %\begin{equation}
+        %x(t)=\frac{1}{4} t + \frac{1}{8}
+        %\label{funcionLineal}
+    %\end{equation}
 
-    \begin{equation}
-        x(t)=\frac{1}{4} t + \frac{1}{8}
-        \label{funcionLineal}
-    \end{equation}
-
-    Esta función lineal se encuentra limitada por un intervalo de duración $4$ segundos, como valor
-    mínimo se tiene $-\frac{1}{2}$ y valor máximo $\frac{7}{2}$, lo que hace que esta 
-    función se vea como un "diente de sierra", por tanto su función más representativa o
-    su intervalo descriptivo es el siguiente:
+    %Esta función lineal se encuentra limitada por un intervalo de duración $4$ segundos, como valor
+    %mínimo se tiene $-\frac{1}{2}$ y valor máximo $\frac{7}{2}$, lo que hace que esta 
+    %función se vea como un "diente de sierra", por tanto su función más representativa o
+    %su intervalo descriptivo es el siguiente:
     
-    \begin{equation}
-        \begin{split}
-            x(t)&=\left(\frac{1}{4} t + \frac{1}{8}\right)rect\left(\frac{t}{4} + \frac{3}{8}\right) \\
-                &=  \left\lbrace  \begin{array}{ll}
-                                    \frac{1}{4} t + \frac{1}{8}; & -\frac{1}{2} \leq t \leq \frac{7}{2} \\
-                                    0; & p.o.c.
-                                \end{array}
-                    \right.      
-        \end{split}
-        \label{dienteSierra}
-    \end{equation}
+    %\begin{equation}
+        %\begin{split}
+            %x(t)&=\left(\frac{1}{4} t + \frac{1}{8}\right)rect\left(\frac{t}{4} + \frac{3}{8}\right) \\
+                %&=  \left\lbrace  \begin{array}{ll}
+                                    %\frac{1}{4} t + \frac{1}{8}; & -\frac{1}{2} \leq t \leq \frac{7}{2} \\
+                                    %0; & p.o.c.
+                                %\end{array}
+                    %\right.      
+        %\end{split}
+        %\label{dienteSierra}
+    %\end{equation}
 
-    El proceso para obtener la Transformada de Fourier de la ecuación \ref{dienteSierra} 
-    se realiza a continuación, donde el valor $x(t)$ de la ecuación \ref{transformadaFourier} será la 
-    ecuación \ref{funcionLineal}, y el valor de los intervalos de la integral serán los que 
-    limitan la función lineal, como se menciono anteriormente \cite{silviaRB}: 
+    %El proceso para obtener la Transformada de Fourier de la ecuación \ref{dienteSierra} 
+    %se realiza a continuación, donde el valor $x(t)$ de la ecuación \ref{transformadaFourier} será la 
+    %ecuación \ref{funcionLineal}, y el valor de los intervalos de la integral serán los que 
+    %limitan la función lineal, como se menciono anteriormente \cite{silviaRB}: 
 
-    \begin{equation*}
-        \begin{split}
-            \tilde{x}(f)& = \int_{\frac{3}{2} -2}^{\frac{3}{2} +2}\left(\frac{1}{4} t+\frac{1}{8} \right) e^{-j2\pi ft}\mathrm{d}t \\
-                        & = \frac{1}{4} \int_{\frac{3}{2}-2}^{\frac{3}{2}+2}t e^{-j2\pi ft}\mathrm{d}t + \frac{1}{8} \int_{\frac{3}{2} -2}^{\frac{2}{3} +2} e^{-j2\pi ft}\mathrm{d}t \\
-                        & = e^{-j2\pi ft}\left(\frac{jt}{8\pi f}  + \frac{1}{16\pi ^{2} f^2}  + \frac{j}{16\pi f} \right)  \Big|_{\frac{3}{2} -2}^{\frac{3}{2} +2} \\
-                        & = \frac{je^{-j3\pi ft } e^{-j4\pi ft}}{8\pi f} \left[\frac{1}{j2\pi f} + 4 
-                          - e^{j8\pi ft} \left(\frac{1}{j2\pi f} \right)\right] \\
-                        & = \left[\left(\frac{1}{16\pi^2 f^2}+\frac{j}{2\pi f}\right)e^{-j4\pi f}-\frac{e^{j4\pi f}}{16\pi^2 f^2}\right] e^{-j3\pi f} \\
-        \end{split}
-    \end{equation*}  
+    %\begin{equation*}
+        %\begin{split}
+            %\tilde{x}(f)& = \int_{\frac{3}{2} -2}^{\frac{3}{2} +2}\left(\frac{1}{4} t+\frac{1}{8} \right) e^{-j2\pi ft}\mathrm{d}t \\
+                        %& = \frac{1}{4} \int_{\frac{3}{2}-2}^{\frac{3}{2}+2}t e^{-j2\pi ft}\mathrm{d}t + \frac{1}{8} \int_{\frac{3}{2} -2}^{\frac{2}{3} +2} e^{-j2\pi ft}\mathrm{d}t \\
+                        %& = e^{-j2\pi ft}\left(\frac{jt}{8\pi f}  + \frac{1}{16\pi ^{2} f^2}  + \frac{j}{16\pi f} \right)  \Big|_{\frac{3}{2} -2}^{\frac{3}{2} +2} \\
+                        %& = \frac{je^{-j3\pi ft } e^{-j4\pi ft}}{8\pi f} \left[\frac{1}{j2\pi f} + 4 
+                          %- e^{j8\pi ft} \left(\frac{1}{j2\pi f} \right)\right] \\
+                        %& = \left[\left(\frac{1}{16\pi^2 f^2}+\frac{j}{2\pi f}\right)e^{-j4\pi f}-\frac{e^{j4\pi f}}{16\pi^2 f^2}\right] e^{-j3\pi f} \\
+        %\end{split}
+    %\end{equation*}  
   
 
-    \begin{equation}
-        \tcboxmath[colback=gray!25!white,colframe=black, title=Transformada de Fourier]{
-            \tilde{x}(f) = \frac{e^{-j7pi f }(1 - e^{j8\pi f} + j8\pi f)}{16\pi^2 f^2}
-        }
-    \end{equation}
+    %\begin{equation}
+        %\tcboxmath[colback=gray!25!white,colframe=black, title=Transformada de Fourier]{
+            %\tilde{x}(f) = \frac{e^{-j7pi f }(1 - e^{j8\pi f} + j8\pi f)}{16\pi^2 f^2}
+        %}
+    %\end{equation}
 
 \printbibliography[title={Bibliografía}]
 

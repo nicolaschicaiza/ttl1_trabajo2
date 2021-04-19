@@ -934,6 +934,17 @@ INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\multirow\multirow.sty
 INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\tex\latex\multirow\multirow.sty
@@ -1326,6 +1337,10 @@ INPUT .\img\ResultadoEcuacionMATLAB.png
 INPUT .\img\ResultadoEcuacionMATLAB.png
 INPUT .\img\ResultadoEcuacionMATLAB.png
 INPUT .\img\ResultadoEcuacionMATLAB.png
+INPUT .\Escudo.jpg
+INPUT .\Escudo.jpg
+INPUT Escudo.jpg
+INPUT .\Escudo.jpg
 INPUT .\img\EMagnitudTF_ESimbolica.png
 INPUT .\img\EMagnitudTF_ESimbolica.png
 INPUT img\EMagnitudTF_ESimbolica.png
@@ -1334,10 +1349,13 @@ INPUT .\img\EMagnitudTF_ESimbolica.png
 INPUT .\img\EMagnitudTF_ESimbolica.png
 INPUT .\img\EMagnitudTF_ESimbolica.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT .\img\EMagnitudTF_ESimbolica.png
-INPUT .\img\EMagnitudTF_ESimbolica.png
-INPUT img\EMagnitudTF_ESimbolica.png
-INPUT .\img\EMagnitudTF_ESimbolica.png
+INPUT .\img\EFaseTF_ESimbolica.png
+INPUT .\img\EFaseTF_ESimbolica.png
+INPUT img\EFaseTF_ESimbolica.png
+INPUT .\img\EFaseTF_ESimbolica.png
+INPUT .\img\EFaseTF_ESimbolica.png
+INPUT .\img\EFaseTF_ESimbolica.png
+INPUT .\img\EFaseTF_ESimbolica.png
 INPUT .\img\EMagnitudTF_FFT.png
 INPUT .\img\EMagnitudTF_FFT.png
 INPUT img\EMagnitudTF_FFT.png
@@ -1352,12 +1370,6 @@ INPUT .\img\EFaseTF_FFT.png
 INPUT .\img\EFaseTF_FFT.png
 INPUT .\img\EFaseTF_FFT.png
 INPUT .\img\EFaseTF_FFT.png
-INPUT .\Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT Escudo.jpg
-INPUT .\Escudo.jpg
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmrc8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
@@ -1365,6 +1377,8 @@ INPUT .\Escudo.jpg
 INPUT .\Escudo.jpg
 INPUT Escudo.jpg
 INPUT .\Escudo.jpg
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmrc8t.vf
@@ -1405,3 +1419,7 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmri8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmri8a.pfb
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\fonts\type1\public\xypic\xyatip10.pfb
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\fonts\type1\public\xypic\xyatip10.pfb
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\fonts\type1\public\xypic\xybtip10.pfb
+INPUT C:\Users\Nicolas Chicaiza\AppData\Roaming\MiKTeX\fonts\type1\public\xypic\xybtip10.pfb
