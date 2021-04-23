@@ -18,6 +18,7 @@
 \usepackage{tcolorbox}
 \usepackage{fancyhdr}
 \usepackage{authblk}
+\usepackage[font=footnotesize]{caption}
 \usepackage[toc,page]{appendix}
 \usepackage{parskip}
 \usepackage{amssymb, amsmath} % Paquetes matemáticos de la American Mathematical Society
@@ -74,6 +75,8 @@
 %Content
 
 \raggedbottom
+
+\renewcommand*{\bibfont}{\footnotesize} % Camviar tamaño bibliografía
 
 \addto\captionsspanish{
     \renewcommand\appendixname{Anexo}
@@ -179,9 +182,9 @@
         \epsilon_x=\int_{-\frac{1}{2}}^{\frac{7}{2}}\left|\frac{1}{4}t + \frac{1}{8}\right|^2 \mathrm{d}t = \frac{4}{3}
     \end{equation*}
 
-    Después de comprobar que la señal tiene una energía definida y es posible denominarla como no
+    Después de comprobar que la señal tiene una energía definida y es posible definir como no
     periódica, se procedió a calcular la transformada de la señal resolviendo la integral 
-    característica del teorema, antes de esto se considera la función que representa la grafica 
+    característica del teorema, antes de esto se considera la función que representa la gráfica 
     de la señal de interés observada en la figura \ref{funcionAsiganda}.
 
     \begin{figure}[h!]
@@ -248,13 +251,14 @@
                             Fourier.} \ar[d] & &
                 \\
                 % cuarta fila
-                *++[F-,]\txt{4. Graficación de señales y espectros de \\
-                            las Transformadas de Fourier}
+                *++[F-,]\txt{4. Representación de las gráficas de señales \\
+                            y espectros de las Transformadas de Fourier}
             } 
         }
         \caption{Diagrama para el desarrollo de la simulación.}
         \label{diagramaGeneral}
     \end{figure}
+    \vspace{-5mm}
     
     Para la realización del Script de simulación se utilizó el paradigma de programación estructurada, 
     ya que el mismo permite agilidad en el desarrollo del código, así como también facilita el desarrollo
@@ -266,7 +270,7 @@
     \subsection{Plan de pruebas}
 
     Retomando los 6 objetivos clave a desarrollar con la simulación, se plantea el siguiente plan de pruebas
-    para los escenarios a realizar:
+    para los escenarios a simular y verificar:
     
      \begin{figure}[H]
         \tiny
@@ -294,16 +298,17 @@
         \caption{Diagrama para el plan de pruebas.}
         \label{diagramaEscenarios}
     \end{figure}
+    \vspace{-5mm}
 
 \section{Análisis de resultados}
     Para alcanzar los resultados se realizó un único Script, que en primer lugar es capaz de obtener el valor
     de la Transforma de Fourier a partir de la solución de la integral característica del teorema, de tal
     manera que el resultado obtenido sea fácil de comparar. Además en el algoritmo se implemento un ciclo 
     que es ideal para evaluar el resultado de la integral en un determinado intervalo de frecuencia, con el
-    fin de representar las graficas del espectro en frecuencia.
+    fin de representar las gráficas del espectro en frecuencia.
     
     En segundo lugar, la implementación del algoritmo de la Transformada Rápida de Fourier (mencionada
-    en la sección \ref{intro}) permitió validar que las graficas obtenidos con la simulación de los 
+    en la sección \ref{intro}) permitió validar que las gráficas obtenidos con la simulación de los 
     cálculos son correctas. El proceso de comprobación de las gráficas inicialmente requirió de una buena
     implementación del algoritmo FFT para realizar una validez al aplicar la propiedad de dualidad que
     manifiesta que: $V(t)\rightarrow v(-f)$, donde la transformada en el dominio del tiempo su transformada
@@ -330,7 +335,7 @@
         la misma ecuación, por lo que se puede considerar que obtener la transformada de Fourier
         por medio de una integral simbólica es una buena alternativa. Además de comprobar el resultado
         numérico de los cálculos, se implementó en el algoritmo un ciclo capaz de evaluar el resultado
-        de la figura \ref{resultadoEcuacionMATLAB} para poder representar las grafica del espectro de la
+        de la figura \ref{resultadoEcuacionMATLAB} para poder representar las gráfica del espectro de la
         frecuencia de la transformada de la señal planteada.
          
         \begin{figure}[H]
@@ -360,24 +365,25 @@
             \centering 
             \begin{subfigure}[h]{0.49\linewidth}
                 \includegraphics[width=\linewidth]{img/EMagnitudTF_FFT.png}
-                \label{magnitudFFT}
                 \caption{}
+                \label{magnitudFFT}
             \end{subfigure}
             \begin{subfigure}[h]{0.49\linewidth}
                 \includegraphics[width=\linewidth]{img/EFaseTF_FFT.png}
-                \label{faseFFT}
                 \caption{}
+                \label{faseFFT}
             \end{subfigure}
             \caption{Gráficas del espectro de frecuencia de FFT. (a) Espectro de magnitud, (b) Espectro de 
                     fase.}
             \label{espectroFFT}
         \end{figure}
+        \vspace{-5mm}
         
-        En la figuras \ref{magnitudFFT} y \ref{faseFFT} es evidente observar la similitud con las graficas en
+        En la figuras \ref{magnitudFFT} y \ref{faseFFT} es evidente observar la similitud con las gráficas en
         la figura \ref{espectroTeorico}, por lo que el método de evaluar una función obtenida a partir de una 
-        integral simbólica, resulta ser efectiva para este tipo de actividades 
+        integral simbólica, resulta ser efectiva para este tipo de actividades.
         
-        espués de haber realizado estas validaciones para tener claridad acerca de lo que se 
+        Después de haber realizado estas validaciones para tener claridad acerca de lo que se 
         observa en las gráficas, se dio inicio a la investigación que se plantea en este documento
         con el análisis de algunos escenarios que se idearon en la simulación. las propiedades de 
         la Transformada de Fourier que se usaron para el análisis fueron:
@@ -403,11 +409,11 @@
             \includegraphics[width=0.5\linewidth]{img/Proplinearidad.png}
             \caption{Gráficas del espectro: (negro)  
                      Espectro de magnitud con amplitud 5, (azul) Espectro de magnitud original.}
-             \label{P1}
+             \label{P2}
         \end{figure}
         \vspace{-5mm}    
             
-        Por inspección se confirma que la propiedad es aplicada correctamente al modificar los parámetros de la simulación para un escalar A=5. Por confirmación, se evalúa la transformada simbólica en dos puntos específicos de frecuencia 0 Hz y 1 Hz para obtener confirmación numérica de la aplicación de la propiedad y se obtienen los resultados esperados para la ecuación \ref{Linearidad}.
+        Por inspección se confirma que la propiedad es aplicada correctamente al modificar los parámetros de la simulación para un escalar $A=5$. Por confirmación, se evalúa la transformada simbólica en dos puntos específicos de frecuencia $0 Hz$ y $1 Hz$ para obtener confirmación numérica de la aplicación de la propiedad y se obtienen los resultados esperados para la ecuación \ref{Linearidad}.
         
     \subsection{Desarrollo del objetivo clave 3--Cambio de escala}
         La propiedad de cambio de escala indica que al realizarse la transformada de una función con un cambio de proporción en su variable independiente, se obtendrá una transformada con relación inversamente proporcional a ese cambio de la siguiente forma: 
@@ -419,18 +425,19 @@
          
         Para la verificación de esta propiedad se evaluaron dos escenarios; uno en el cual se realiza la transformada simbólica y la FFT sin ningún tipo de modificación a la señal original y otro escenario donde se cambia la escala así:
         
-            \begin{figure}[H]
-                \centering 
-                    \includegraphics[width=0.5\linewidth]{img/Propescala.png}
-                \caption{Gráficas del espectro: (rojo) Gráfica 
-                        espectro de magnitud con escala esc=4, (azul) Gráfica espectro de magnitud original.}
-                \label{P1}
-            \end{figure}
+        \begin{figure}[H]
+            \centering 
+                \includegraphics[width=0.5\linewidth]{img/Propescala.png}
+            \caption{Gráficas del espectro: (rojo) Gráfica 
+                 espectro de magnitud con escala $esc=4$, (azul) Gráfica espectro de magnitud original.}
+            \label{P3}
+        \end{figure}
+        \vspace{-5mm}
             
-        Se puede apreciar que al multiplicar la variable independiente "t" por un escalar esc=4, el espectro de magnitud tiene un comportamiento descrito por la notación (3). Este comportamiento tiene un efecto similar al que se encontró en el taller anterior cuando se modificó en periodo de la señal. Desde un punto de vista aritmético, cambiar la escala de una función periódica, equivale a cambiar escalarmente el periodo de su frecuencia fundamental.
+        Se puede apreciar que al multiplicar la variable independiente "$t$" por un escalar $esc=4$, el espectro de magnitud tiene un comportamiento descrito por la notación (3). Este comportamiento tiene un efecto similar al que se encontró en el taller anterior cuando se modificó en periodo de la señal. Desde un punto de vista aritmético, cambiar la escala de una función periódica, equivale a cambiar escalarmente el periodo de su frecuencia fundamental.
         
-    \subsection{Desarrollo del objetivo clave 4--Translación en el dominio temporal}
-        La propiedad de translación en el tiempo indica que al realizarse la transformada de una función que tiene un desplazamiento temporal, se obtendrá como resultado la transformada de la función original pero multiplicada por un exponencial complejo de la siguiente forma: 
+    \subsection{Desarrollo del objetivo clave 4--Traslación en el dominio temporal}
+        La propiedad de traslación en el tiempo indica que al realizarse la transformada de una función que tiene un desplazamiento temporal, se obtendrá como resultado la transformada de la función original pero multiplicada por un exponencial complejo de la siguiente forma: 
         
         \begin{equation}
             {x}(t-to) \rightarrow \tilde{X}(f) e^{-j2 \pi fto}
@@ -440,25 +447,26 @@
         Para la evaluación de este escenario se hace necesario tener en cuenta la información entregada por el espectro de fase, ya que en la notación (4) es notorio que el resultado de aplicar un desplazamiento temporal únicamente va a tener efectos en la parte imaginaria de la transformada de Fourier debido a la forma del exponencial complejo que acompaña al par transformado.
         
         \begin{figure}[H]
-                \centering 
-                \begin{subfigure}[h]{0.49\linewidth}
-                    \includegraphics[width=\linewidth]{img/Proptiempomagnitud.png}
-                    \label{P3}
-                    \caption{}
-                \end{subfigure}
-                \begin{subfigure}[h]{0.49\linewidth}
-                    \includegraphics[width=\linewidth]{img/Proptiempofase.png}
-                    \label{P33}
-                    \caption{}
-                \end{subfigure}
-                \caption{(a) Superposición de espectros de magnitud, (b) Superposición de espectros de fase (verde) Fase sin aplicar desplazamiento - (negro) Fase al aplicar desplazamiento sh=2.}
-                \label{P33}
-            \end{figure}
+            \centering 
+            \begin{subfigure}[h]{0.49\linewidth}
+                \includegraphics[width=\linewidth]{img/Proptiempomagnitud.png}
+                \label{P41}
+                \caption{}
+            \end{subfigure}
+            \begin{subfigure}[h]{0.49\linewidth}
+                \includegraphics[width=\linewidth]{img/Proptiempofase.png}
+                \label{P42}
+                \caption{}
+            \end{subfigure}
+            \caption{(a) Superposición de espectros de magnitud, (b) Superposición de espectros de fase (verde) Fase sin aplicar desplazamiento - (negro) Fase al aplicar desplazamiento $sh=2$.}
+            \label{P4}
+        \end{figure}
+        \vspace{-5mm} 
         
-        Al inspeccionar las gráficas obtenidas, se confirma que en el caso de translación temporal, el espectro de magnitud no sufre ninguna modificación; Sin embargo, el espectro de fase si cambia debido a que el movimiento de la señal en el dominio del tiempo refleja su información en la fase de la transformada.
+        Al inspeccionar las gráficas obtenidas, se confirma que en el caso de traslación temporal, el espectro de magnitud no sufre ninguna modificación; Sin embargo, el espectro de fase si cambia debido a que el movimiento de la señal en el dominio del tiempo refleja su información en la fase de la transformada.
         
-    \subsection{Desarrollo del objetivo clave 5--Translación en el dominio de la frecuencia}
-        La propiedad de translación en frecuencia indica que al realizarse la transformada de una función en el tiempo la cual esta multiplicada por un exponencial complejo tal que cause un cambio en la frecuencia, se obtendrá como resultado la misma transformada pero desplazada en el dominio de la frecuencia de la siguiente forma: 
+    \subsection{Desarrollo del objetivo clave 5--Traslación en el dominio de la frecuencia}
+        La propiedad de traslación en frecuencia indica que al realizarse la transformada de una función en el tiempo la cual esta multiplicada por un exponencial complejo tal que cause un cambio en la frecuencia, se obtendrá como resultado la misma transformada pero desplazada en el dominio de la frecuencia de la siguiente forma: 
         
         \begin{equation}
             {x}(t)e^{j2 \pi fot} \rightarrow \tilde{X}(f-fo)
@@ -468,20 +476,25 @@
         Al realizar los cambios en la simulación, se obtuvieron los siguientes resultados:
         
         \begin{figure}[H]
-                \centering 
-                \begin{subfigure}[h]{0.49\linewidth}
-                    \includegraphics[width=\linewidth]{img/Propfrecmagnitud.png}
-                    \label{P4}
-                    \caption{}
-                \end{subfigure}
-                \begin{subfigure}[h]{0.49\linewidth}
-                    \includegraphics[width=\linewidth]{img/Propfrecfase.png}
-                    \label{P44}
-                    \caption{}
-                \end{subfigure}
-                \caption{(a) Superposición de espectros de magnitud, (b) Superposición de espectros de fase (verde) Fase sin aplicar desplazamiento - (negro) Fase al aplicar desplazamiento sh=2.}
-                \label{P44}
-            \end{figure}
+            \small
+            \centering 
+            \begin{subfigure}[h]{0.49\linewidth}
+                \includegraphics[width=\linewidth]{img/Propfrecmagnitud.png}
+                \label{P51}
+                \caption{}
+            \end{subfigure}
+            \begin{subfigure}[h]{0.49\linewidth}
+                \includegraphics[width=\linewidth]{img/Propfrecfase.png}
+                \label{P52}
+                \caption{}
+            \end{subfigure}
+            \caption{(a) Superposición de espectros de magnitud (azul) original (rojo) con desplazamiento $shf=2$, (b) Superposición de espectros de fase (verde) Fase sin aplicar desplazamiento - (negro) Fase al aplicar desplazamiento $shf=2$.}
+            \label{P5}
+        \end{figure}
+        \vspace{-5mm} 
+        
+        Se evidencia gráficamente que el espectro de magnitud de la señal presenta un desplazamiento hacia la derecha, esto producto de la multiplicación por el exponencial complejo en el dominio del tiempo. El espectro de fase también presenta un cambio justo en el rango de frecuencias donde se presenta el desplazamiento ($0<f<2$).
+        Cabe resaltar que multiplicar la señal en el dominio del tiempo por un exponencial complejo, lleva irrevocablemente a la señal al plano complejo, por lo que la señal real original se convierte en la magnitud o valor absoluto de esta señal compleja resultante.
             
 \section{Conclusiones}
     En el dominio del tiempo cuando se tiene una señal de tiempo discreto o de periodo infinito,
@@ -499,6 +512,14 @@
     negativo se produce su invertida, lo cual produce una modificación en el periodo. Por tanto
     los efectos de esta propiedad causara una modificación recíproca en la magnitud de la 
     frecuencia.
+    
+    Al evaluar la propiedad de desplazamiento en frecuencia, se evidenció gráficamente que la misma equivale a multiplicar una señal armónica simple y convertir a la señal original en su envolvente. Si se aplica la función de valor absoluto sobre esta multiplicación, se obtiene nuevamente la señal original, por lo cual, se podría afirmar que la componente armónica esta dando forma o 'modulando' a la señal original.
+    
+    La traslación de una señal en el dominio del tiempo no genera cambios de ningún tipo en el espectro de magnitud de la señal. Los cambios únicamente se ven reflejados en el espectro de fase de la misma.
+    
+    De acuerdo a la relación obtenida de la simulación entre los tiempos de computo de la función FFT y los valores de la transformada de Fourier obtenidos desde la ecuación calculada simbólicamente, se concluye que la función FFT es mas de 1000 veces mas rápida que la sustitución de valores en una ecuación simbólica.
+    
+    
     
     
 %\appendix
